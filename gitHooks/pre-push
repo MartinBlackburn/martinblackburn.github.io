@@ -1,0 +1,5 @@
+#!/bin/sh
+# Mirror master in gh-pages
+git checkout gh-pages
+git rebase master
+git checkout master
