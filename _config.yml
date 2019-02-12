@@ -1,0 +1,23 @@
+# Site settings
+title: Martin Blackburn
+description: The written works on Martin Blackburn, a front end developer from Leeds.
+baseurl: ""
+url: "https://martinblackburn.co.uk"
+twitter: walking_fishy
+github:  MartinBlackburn
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:title/
+paginate: 10
+future: true
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gitHooks/"
+  - "README.md"
+
+# Pagination
+paginate: 1
+
+plugins: [jekyll-paginate]

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<ul class="postList">
+    {% for post in paginator.posts %}
+        <li class="post">
+            <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d %B, %Y" }}</time>
+            <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.summary }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+{% include pagination.html %}
