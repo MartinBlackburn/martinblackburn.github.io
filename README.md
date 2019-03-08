@@ -9,3 +9,6 @@ chmod +x gitHooks/*
 ```
 
 This will make sure a git hook is running. So everytime a push is made it will rebase `gh-pages` from `master` before the push happens.
+
+## Running dev
+To run the site locally run `bundle exec jekyll serve` and go to http://localhost:4000.

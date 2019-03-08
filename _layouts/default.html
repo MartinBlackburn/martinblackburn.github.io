@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    {% include meta/page.html %}
     
-    <title>{% if page.title %}{{ page.title }} - {% endif %} Martin Blackburn</title>
+    {% include meta/title.html %}
     
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    {% include meta/css.html %}
 </head>
 
 <body>
