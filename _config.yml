@@ -16,6 +16,9 @@ exclude:
   - "Gemfile.lock"
   - "gitHooks/"
   - "README.md"
+  - "_posts/**/*.jpg"
+  - "_posts/**/*.png"
+  - "_posts/**/*.gif"
 
 sass:
     sass_dir: assets/sass
