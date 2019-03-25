@@ -7,7 +7,7 @@ summary: What is each part of a CSS rule called? Not something everyone knows, e
 ---
 I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.
 
-![A CSS ruleset](css rule.png)
+![A CSS ruleset](css-rule.png)
 
 Lets break it down into parts:
 * The whole thing is a ruleset
