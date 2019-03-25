@@ -1,0 +1,18 @@
+.socialMedia {
+  list-style: none;
+  line-height: 0;
+  text-align: right; }
+
+.socialMedia li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px; }
+
+.socialMedia svg {
+  width: 24px;
+  height: auto;
+  fill: #ffffff;
+  transition: 0.2s all ease; }
+
+.socialMedia svg:hover {
+  fill: #EF8354; }

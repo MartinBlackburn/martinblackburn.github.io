@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-25T13:38:01+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Martin Blackburn</title><subtitle>The written works on Martin Blackburn, a front end developer from Leeds.</subtitle><entry><title type="html">Anatomy of a CSS rule</title><link href="http://localhost:4000/2019/03/anatomy-of-a-css-rule/" rel="alternate" type="text/html" title="Anatomy of a CSS rule" /><published>2019-03-21T00:00:00+00:00</published><updated>2019-03-21T00:00:00+00:00</updated><id>http://localhost:4000/2019/03/anatomy-of-a-css-rule</id><content type="html" xml:base="http://localhost:4000/2019/03/anatomy-of-a-css-rule/">&lt;p&gt;I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;css rule.png&quot; alt=&quot;A CSS ruleset&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lets break it down into parts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The whole thing is a ruleset&lt;/li&gt;
+  &lt;li&gt;The curly braces and everything inside is a declaration block&lt;/li&gt;
+  &lt;li&gt;The bit before the opening curly brace is a selector&lt;/li&gt;
+  &lt;li&gt;A declaration has two parts, separated by a colon and ending in a semicolon&lt;/li&gt;
+  &lt;li&gt;Each declaration has a property (before the semi colon) and a value (after the semi colon)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A selector can be any, or a combination of:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A class (.selector)&lt;/li&gt;
+  &lt;li&gt;An ID (#selector)&lt;/li&gt;
+  &lt;li&gt;An element (body)&lt;/li&gt;
+  &lt;li&gt;A Pseudo-Class (:hover)&lt;/li&gt;
+  &lt;li&gt;A Pseudo-Element (::after)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can find out more from the following links:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax&quot;&gt;MDN’s CSS Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/css-ruleset-terminology/&quot;&gt;CSS Ruleset terminology on CSS Tricks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.impressivewebs.com/css-terms-definitions/&quot;&gt;CSS definitions by Louis Lazaris&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.</summary></entry></feed>

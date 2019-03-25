@@ -1,0 +1,11 @@
+.posts {
+  margin: 0;
+  list-style: none; }
+
+.posts li {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #2D3142; }
+
+.posts li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0; }
