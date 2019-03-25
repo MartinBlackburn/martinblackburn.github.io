@@ -1,5 +1,7 @@
 #!/bin/sh
-# Mirror master in gh-pages
-git checkout gh-pages
-git rebase master
+# push the _site directory to gh-pages
 git checkout master
+git branch -D gh-pages
+git subtree split --prefix _site -b gh-pages
+git push -f origin gh-pages:gh-pages
+git branch -D gh-pages
