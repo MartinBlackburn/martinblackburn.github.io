@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/assets/css/posts.css" />
+
+<ul class="posts">
+    {% for post in paginator.posts %}
+        <li>
+            {% include postSummary.html post=post %}
+        </li>
+    {% endfor %}
+</ul>

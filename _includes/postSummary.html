@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="/assets/css/postSummary.css" />
+
+<a href="{{ post.url }}" class="postSummary">
+    <h1 class="postSummary__title">{{ post.title }}</h1>
+    <time class="postSummary__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <p class="postSummary__text">{{ post.summary }}</p>
+</a>

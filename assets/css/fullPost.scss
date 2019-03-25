@@ -1,0 +1,27 @@
+---
+---
+
+@import 'units';
+@import 'colours';
+
+.fullPost {
+    color: $black;
+}
+
+.fullPost__title {
+    margin-bottom: 0;
+    
+    color: $orange;
+}
+
+.fullPost__date {
+    font-size: 80%;
+    margin-bottom: $oneUnit;
+    display: block;
+}
+
+.fullPost ul,
+.fullPost ol {
+    margin-left: $twoUnits;
+    margin-bottom: $twoUnits;
+}

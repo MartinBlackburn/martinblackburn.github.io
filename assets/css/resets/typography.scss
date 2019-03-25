@@ -1,0 +1,82 @@
+---
+---
+
+@import 'units';
+@import "colours";
+
+html {
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    
+    color: $black;
+    
+    background: $white;
+}
+
+h1, .h1 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 2em;
+}
+
+h2, .h2 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 1.75em;
+}
+
+h3, .h2 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 1.5em;
+}
+
+h4, .h4 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 1.25em;
+}
+
+h5, .h5 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 1em;
+}
+
+h6, .h6 {
+    margin: 0 0 $twoUnits 0;
+    
+    font-size: 1em;
+}
+
+p {
+    margin: 0 0 $twoUnits 0;
+}
+
+a {
+    color: $orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+pre {
+    padding: $twoUnits;
+    border-radius: 3px;
+    margin: 0 0 $twoUnits 0;
+    
+    white-space: pre;
+    word-wrap: normal;
+    color: $white;
+    
+    overflow: auto;
+    
+    background-color: $black;
+    
+    @media screen and (min-width: 750px) {
+        margin: 0 (-$twoUnits) $twoUnits (-$twoUnits);
+    }
+}

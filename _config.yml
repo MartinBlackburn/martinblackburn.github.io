@@ -17,7 +17,10 @@ exclude:
   - "gitHooks/"
   - "README.md"
 
+sass:
+    sass_dir: assets/sass
+    
 # Pagination
-paginate: 1
+paginate: 10
 
 plugins: [jekyll-paginate]
