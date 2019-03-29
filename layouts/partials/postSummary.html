@@ -1,0 +1,8 @@
+{{ $style := resources.Get "sass/postSummary.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<a href="{{.Permalink}}" class="postSummary">
+    <h1 class="postSummary__title">{{ .Title }}</h1>
+    <time class="postSummary__date" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "02/01/2006"}}</time>
+    <p class="postSummary__text">{{ .Description }}</p>
+</a>

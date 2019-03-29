@@ -1,0 +1,28 @@
+@import "units";
+@import "colours";
+
+.socialMedia {
+    list-style: none;
+    
+    line-height: 0;
+    text-align: right;
+}
+
+.socialMedia li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: $oneUnit;
+}
+
+.socialMedia svg {
+    width: $threeUnits;
+    height: auto;
+    
+    fill: $white;
+    
+    transition: 0.2s all ease;
+}
+
+.socialMedia svg:hover {
+    fill: $blue;
+}

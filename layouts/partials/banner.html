@@ -1,0 +1,9 @@
+{{ $style := resources.Get "sass/banner.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<section class="banner">
+    <div class="banner__inner">
+        <h1 class="banner__title">{{ .Title }}</h1>
+        <p class="banner__subtitle">{{ .Description }}</p>
+    </div>
+</section>

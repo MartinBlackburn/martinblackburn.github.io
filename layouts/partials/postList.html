@@ -1,0 +1,10 @@
+{{ $style := resources.Get "sass/postList.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<ul class="postList">
+{{ range where . "Section" "posts" }}
+    <li class="postList__post">
+        {{ partial "postSummary.html" . }}
+    </li>
+{{ end }}
+</ul>

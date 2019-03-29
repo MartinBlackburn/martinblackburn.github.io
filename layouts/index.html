@@ -1,0 +1,5 @@
+{{ define "main" }}
+    {{ "<!-- Index template -->" | safeHTML }}
+    
+    {{ partial "postList.html" .Data.Pages }}
+{{ end }}

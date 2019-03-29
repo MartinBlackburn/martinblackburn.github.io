@@ -1,0 +1,10 @@
+title = "Martin Blackburn"
+
+baseURL = "https://martinblackburn.co.uk/"
+
+languageCode = "en-us"
+
+canonifyURLs = true
+
+[taxonomies]
+  category = "categories"

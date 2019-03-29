@@ -1,0 +1,10 @@
+@import "units";
+@import "colours";
+
+.topBar {
+    padding: $twoUnits;
+    
+    background: $featuredColour;
+    
+    color: $white;
+}

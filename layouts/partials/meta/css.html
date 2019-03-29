@@ -1,0 +1,11 @@
+{{ $style := resources.Get "sass/resets/normalize.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+{{ $style := resources.Get "sass/resets/reset.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+{{ $style := resources.Get "sass/resets/typography.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+{{ $style := resources.Get "sass/resets/wrapper.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

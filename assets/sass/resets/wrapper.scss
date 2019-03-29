@@ -1,0 +1,16 @@
+@import '../units';
+@import '../colours';
+
+.wrapper {
+    max-width: 750px;
+    margin: 0 $twoUnits $twoUnits $twoUnits;
+    padding: $threeUnits;
+    
+    box-shadow: 0 0 10px rgba(45, 49, 66, 0.17);;
+    
+    background: $white;
+    
+    @media screen and (min-width: 750px) {
+        margin: 0 auto $twoUnits auto;
+    }
+}

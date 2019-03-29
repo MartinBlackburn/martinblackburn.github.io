@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "meta/page.html" . }}
+
+    {{ partial "meta/title.html" . }}
+
+    {{ partial "meta/css.html" . }}
+</head>
+
+<body>
+    {{ partial "topBar.html" . }}
+    
+    {{ partial "banner.html" . }}
+
+    <div class="wrapper">
+        {{ block "main" . }}
+            <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+    </div>
+</body>
+
+</html>

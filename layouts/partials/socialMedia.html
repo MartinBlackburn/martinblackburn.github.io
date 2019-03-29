@@ -1,0 +1,8 @@
+{{ $style := resources.Get "sass/socialMedia.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<ul class="socialMedia">
+    <li><a href="https://twitter.com/walking_fishy">{{ partial "icons/twitter.html" . }}</a></li>
+    <li><a href="https://github.com/MartinBlackburn">{{ partial "icons/github.html" . }}</a></li>
+    <li><a href="https://instagram.com/walking_fishy">{{ partial "icons/instagram.html" . }}</a></li>
+</ul>

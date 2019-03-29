@@ -1,0 +1,6 @@
+{{ $style := resources.Get "sass/topBar.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<div class="topBar">
+    {{ partial "socialMedia.html" . }}
+</div>

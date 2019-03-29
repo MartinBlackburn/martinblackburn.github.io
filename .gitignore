@@ -1,3 +1,6 @@
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# hugo build directory
+/public
+/resources
+
+# OS stuff
+.DS_Store

@@ -1,0 +1,17 @@
+@import '../colours';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    
+    background: $lightGrey;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
