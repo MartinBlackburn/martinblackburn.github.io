@@ -1,0 +1,1 @@
+.postList{margin:0;list-style:none}.postList__post{margin-bottom:24px;padding-bottom:24px;position:relative}.postList__post::after{content:'';width:80%;height:1px;background:#cedbf0;position:absolute;bottom:0;left:50%;transform:translate(-50%,0)}.postList__post:last-child{margin-bottom:0;padding-bottom:0}.postList__post:last-child::after{display:none}
