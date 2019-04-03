@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Martin Blackburn</title>
-    <link>https://martinblackburn.co.uk/</link>
+    <link>https://martinblackburn.github.io/</link>
     <description>Recent content on Martin Blackburn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://martinblackburn.co.uk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinblackburn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Magic</title>
-      <link>https://martinblackburn.co.uk/posts/2019-03-25-magic/</link>
+      <link>https://martinblackburn.github.io/posts/2019-03-25-magic/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://martinblackburn.co.uk/posts/2019-03-25-magic/</guid>
+      <guid>https://martinblackburn.github.io/posts/2019-03-25-magic/</guid>
       <description>I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.
 Lets break it down into parts: * The whole thing is a ruleset * The curly braces and everything inside is a declaration block * The bit before the opening curly brace is a selector * A declaration has two parts, separated by a colon and ending in a semicolon * Each declaration has a property (before the semi colon) and a value (after the semi colon)</description>
     </item>
     
     <item>
       <title>Anatomy of a CSS rule</title>
-      <link>https://martinblackburn.co.uk/posts/2019-03-21-anatomy-of-a-css-rule/</link>
+      <link>https://martinblackburn.github.io/posts/2019-03-21-anatomy-of-a-css-rule/</link>
       <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://martinblackburn.co.uk/posts/2019-03-21-anatomy-of-a-css-rule/</guid>
+      <guid>https://martinblackburn.github.io/posts/2019-03-21-anatomy-of-a-css-rule/</guid>
       <description>I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.
 Lets break it down into parts: * The whole thing is a ruleset * The curly braces and everything inside is a declaration block * The bit before the opening curly brace is a selector * A declaration has two parts, separated by a colon and ending in a semicolon * Each declaration has a property (before the semi colon) and a value (after the semi colon)</description>
     </item>
