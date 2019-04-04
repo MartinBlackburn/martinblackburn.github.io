@@ -11,6 +11,7 @@ I was describing the mark-up of a CSS rule to someone learning CSS. I though it 
 ![A CSS ruleset](css-rule.png)
 
 Lets break it down into parts:
+
 * The whole thing is a ruleset
 * The curly braces and everything inside is a declaration block
 * The bit before the opening curly brace is a selector
@@ -18,6 +19,7 @@ Lets break it down into parts:
 * Each declaration has a property (before the semi colon) and a value (after the semi colon) 
 
 A selector can be any, or a combination of:
+
 * A class (.selector)
 * An ID (#selector)
 * An element (body)
@@ -25,6 +27,7 @@ A selector can be any, or a combination of:
 * A Pseudo-Element (::after)
 
 You can find out more from the following links:
+
 * [MDN's CSS Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
 * [CSS Ruleset terminology on CSS Tricks](https://css-tricks.com/css-ruleset-terminology/)
 * [CSS definitions by Louis Lazaris](https://www.impressivewebs.com/css-terms-definitions/)

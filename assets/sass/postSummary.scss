@@ -5,6 +5,10 @@
     color: $black;
 }
 
+.postSummary:hover {
+    text-decoration: none;
+}
+
 .postSummary__title {
     margin-bottom: 0;
 }
@@ -16,5 +20,5 @@
 }
 
 .postSummary__text {
-    margin-bottom: $threeUnits;
+    margin-bottom: 0;
 }

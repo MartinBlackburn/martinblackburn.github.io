@@ -1,0 +1,16 @@
+@import './units';
+
+.post :last-child {
+    margin-bottom: 0;
+}
+
+.post h1,
+.post h2 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: $oneUnit;
+    margin-bottom: $oneUnit;
+}
+
+.post li {
+    margin-bottom: $oneUnit / 2;
+}

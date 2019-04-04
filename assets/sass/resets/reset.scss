@@ -1,4 +1,5 @@
 @import '../colours';
+@import '../units';
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -12,6 +13,13 @@ body {
 }
 
 ul, ol {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 $twoUnits 0;
+    padding: 0 0 0 $twoUnits;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0;
 }

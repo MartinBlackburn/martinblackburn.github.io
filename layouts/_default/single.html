@@ -1,4 +1,10 @@
 {{ define "main" }}
     {{ "<!-- Default single template -->" | safeHTML }}
-    {{ .Content }}
+    
+    {{ $style := resources.Get "sass/post.scss" | resources.ToCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    
+    <div class="post">
+        {{ .Content }}
+    </div>
 {{ end }}
