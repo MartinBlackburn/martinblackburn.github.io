@@ -16,7 +16,76 @@
 .postSummary__date {
     font-size: 80%;
     margin-bottom: $oneUnit;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.postSummary__date .icon {
+    width: $twoUnits;
+    
+    fill: $black;
+}
+
+.postSummary__date .icon,
+.postSummary__date span {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.postSummary__categories {
+    margin-left: $oneUnit;
+    margin-bottom: $oneUnit;
+    display: inline-block;
+    vertical-align: middle;
+    
+    font-size: 80%;
+}
+
+.postSummary__categories .icon {
+    width: $twoUnits;
+    display: inline-block;
+    vertical-align: middle;
+    
+    fill: $black;
+}
+
+.postSummary__categories ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    
+    list-style: none;
+}
+
+.postSummary__categories li {
+    padding-left: $oneUnit;
+    display: inline-block;
+    vertical-align: middle;
+    
+    position: relative;
+}
+
+.postSummary__categories li::before {
+    content: '';
+    width: 1px;
+    height: 60%;
+    
+    background: lighten($featuredColour, 40%);
+    
+    position: absolute;
+    left: $oneUnit / 4;
+    top: 50%;
+    
+    transform: translateY(-50%);
+}
+
+.postSummary__categories li:first-child {
+    padding-left: 0;
+}
+
+.postSummary__categories li:first-child::before {
+    display: none;
 }
 
 .postSummary__text {

@@ -3,6 +3,22 @@
 
 <a href="{{.Permalink}}" class="postSummary">
     <h1 class="postSummary__title">{{ .Title }}</h1>
-    <time class="postSummary__date" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "02/01/2006"}}</time>
+    
+    <time class="postSummary__date" datetime="{{.Date.Format "2006-01-02"}}">
+        {{ partial "icons/calendar.html" . }} <span>{{.Date.Format "02/01/2006"}}</span>
+    </time>
+    
+    {{ with .Params.categories }}
+        <div class="postSummary__categories">
+            {{ partial "icons/tag.html" . }}
+        
+            <ul>
+                {{ range . }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+    
     <p class="postSummary__text">{{ .Description }}</p>
 </a>

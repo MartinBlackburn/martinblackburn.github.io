@@ -9,3 +9,6 @@
 
 {{ $style := resources.Get "sass/resets/wrapper.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+{{ $style := resources.Get "sass/icons.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

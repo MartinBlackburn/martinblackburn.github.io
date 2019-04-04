@@ -1,0 +1,9 @@
+@import './colours';
+@import './units';
+
+.icon {
+    width: $threeUnits;
+    height: auto;
+
+    fill: $white;
+}

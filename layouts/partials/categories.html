@@ -1,0 +1,11 @@
+{{ with . }}
+    <div class="categories">
+        {{ partial "icons/tag.html" . }}
+        
+        <ul class="categories__list">
+            {{ range . }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
