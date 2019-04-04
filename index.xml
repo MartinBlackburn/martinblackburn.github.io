@@ -6,19 +6,21 @@
     <description>Recent content on Martin Blackburn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Magic</title>
-      <link>/posts/2019-03-25-magic/</link>
-      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Gnocchi with Chicken &amp; Tomatoes</title>
+      <link>/posts/2019-04-04-gnocchi-with-chicken-tomatoes/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-03-25-magic/</guid>
-      <description>I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.
-Lets break it down into parts: * The whole thing is a ruleset * The curly braces and everything inside is a declaration block * The bit before the opening curly brace is a selector * A declaration has two parts, separated by a colon and ending in a semicolon * Each declaration has a property (before the semi colon) and a value (after the semi colon)</description>
+      <guid>/posts/2019-04-04-gnocchi-with-chicken-tomatoes/</guid>
+      <description>Sometimes when you&amp;rsquo;re in a rush it can be tempting to eat lots of snacks, or just a bowl of cereal (not that there is anything wrong with cereal).
+Having a few quick to make recipes to hand is always a good thing and you&amp;rsquo;ll feel less guilty than eating just junk food.
+This recipe will serve 2-4 people, depending on people&amp;rsquo;s appetites.
+Ingredients  250g chicken breast 450g gnocchi 300g cherry tomatoes 50g fresh basil  Prep  Cut the chicken into chunks, about 2cm each Cut the tomatoes in half Tear the basil into small pieces  Instructions  Cook the gnocchi according to package directions.</description>
     </item>
     
     <item>
@@ -28,7 +30,8 @@ Lets break it down into parts: * The whole thing is a ruleset * The curly braces
       
       <guid>/posts/2019-03-21-anatomy-of-a-css-rule/</guid>
       <description>I was describing the mark-up of a CSS rule to someone learning CSS. I though it would be handy to have a reference for it, so I created the following reference image for him.
-Lets break it down into parts: * The whole thing is a ruleset * The curly braces and everything inside is a declaration block * The bit before the opening curly brace is a selector * A declaration has two parts, separated by a colon and ending in a semicolon * Each declaration has a property (before the semi colon) and a value (after the semi colon)</description>
+Lets break it down into parts:
+ The whole thing is a ruleset The curly braces and everything inside is a declaration block The bit before the opening curly brace is a selector A declaration has two parts, separated by a colon and ending in a semicolon Each declaration has a property (before the semi colon) and a value (after the semi colon)  A selector can be any, or a combination of:</description>
     </item>
     
   </channel>
