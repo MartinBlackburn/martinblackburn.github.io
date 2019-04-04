@@ -3,33 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://martinblackburn.github.io/posts/2019-03-25-magic/</loc>
+    <loc>/posts/2019-03-25-magic/</loc>
     <lastmod>2019-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://martinblackburn.github.io/posts/2019-03-21-anatomy-of-a-css-rule/</loc>
+    <loc>/posts/2019-03-21-anatomy-of-a-css-rule/</loc>
     <lastmod>2019-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://martinblackburn.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://martinblackburn.github.io/categories/css/</loc>
+    <loc>/categories/css/</loc>
     <lastmod>2019-03-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://martinblackburn.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2019-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://martinblackburn.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2019-03-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
