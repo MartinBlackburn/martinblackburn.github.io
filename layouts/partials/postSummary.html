@@ -20,5 +20,11 @@
         </div>
     {{ end }}
     
+    {{ with .Resources }}
+        {{ with .GetMatch "{thumbnail.*}" }}
+            <img class="postSummary__thumbnail" src="{{ .Permalink }}" />
+        {{ end }}
+    {{ end }}
+    
     <p class="postSummary__text">{{ .Description }}</p>
 </a>

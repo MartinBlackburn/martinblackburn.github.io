@@ -2,7 +2,10 @@
 @import 'colours';
 
 .postSummary {
+    display: block;
+
     color: $black;
+    text-align: center;
 }
 
 .postSummary:hover {
@@ -86,6 +89,14 @@
 
 .postSummary__categories li:first-child::before {
     display: none;
+}
+
+.postSummary__thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: $twoUnits auto;
 }
 
 .postSummary__text {
