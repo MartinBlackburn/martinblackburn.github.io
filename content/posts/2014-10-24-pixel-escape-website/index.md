@@ -10,6 +10,8 @@ description: "A little platform game my brother has been making"
 
 Unfortunatly the site is no more and the game will no longer be updated. Dont expect the links below to work.
 
+---
+
 ![image](site.jpg)
 
 The game is about saving Pixel-land, the world where innocent little pixels live. You do this by using the space key to jump and the mouse can draw lines for the pixels to walk on.

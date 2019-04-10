@@ -65,6 +65,14 @@ a:hover {
     text-decoration: underline;
 }
 
+code {
+    padding: $oneUnit / 2;
+    
+    font-size: 0.8em;
+    
+    background: $lightGrey;
+}
+
 pre {
     padding: $twoUnits;
     border-radius: 3px;
@@ -77,8 +85,10 @@ pre {
     overflow: auto;
     
     background-color: $black;
+}
+
+pre code {
+    padding: 0;
     
-    @media screen and (min-width: 750px) {
-        margin: 0 (-$twoUnits) $twoUnits (-$twoUnits);
-    }
+    background: none;
 }

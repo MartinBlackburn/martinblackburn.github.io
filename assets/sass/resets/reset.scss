@@ -28,3 +28,13 @@ img {
     width: 100%;
     height: auto;
 }
+
+hr {
+    width: 75%;
+    height: 1px;
+    margin: $twoUnits auto;
+    border: 0;
+    box-sizing: border-box;
+    
+    background: lighten($featuredColour, 40%);
+}

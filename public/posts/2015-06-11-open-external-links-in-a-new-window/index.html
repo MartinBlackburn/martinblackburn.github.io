@@ -8,7 +8,7 @@
 
 
     <title>
-    Pixel escape website - Martin Blackburn
+    Open external links in a new window - Martin Blackburn
 </title>
 
 
@@ -65,8 +65,8 @@
 
 <section class="banner">
     <div class="banner__inner">
-        <h1 class="banner__title">Pixel escape website</h1>
-        <p class="banner__subtitle">A little platform game my brother has been making</p>
+        <h1 class="banner__title">Open external links in a new window</h1>
+        <p class="banner__subtitle">A little bit of javascript that will open all links in a new window</p>
     </div>
 </section>
 
@@ -79,19 +79,45 @@
     <link rel="stylesheet" href="/sass/post.min.css">
     
     <div class="post">
-        <p><strong>Update 10/02/2017</strong>:</p>
+        
 
-<p>Unfortunatly the site is no more and the game will no longer be updated. Dont expect the links below to work.</p>
+<p><strong>Update 11/04/2018</strong>:</p>
+
+<p>I wrote this a long time ago, since then I&rsquo;ve stopped using jQuery.</p>
 
 <hr />
 
-<p><img src="site.jpg" alt="image" /></p>
+<p>I&rsquo;m not saying that this is a good thing, in fact, it&rsquo;s probably a bad thing. A user should always have the choice on if a link should open in a new window or not.</p>
 
-<p>The game is about saving Pixel-land, the world where innocent little pixels live. You do this by using the space key to jump and the mouse can draw lines for the pixels to walk on.</p>
+<p>However, this is a small bit of javascript that will make all external links open in a new tab/window.</p>
 
-<p>You can <a href="https://www.youtube.com/watch?v=3wNNU1XjeQc">view a trailer</a> for the game or <a href="http://www.crazygames.com/game/pixel-escape">play it</a>.</p>
+<pre><code>&lt;script&gt;
+    var links = document.links;
+    
+    for (var i = 0, linksLength = links.length; i &lt; linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        } 
+    }
+&lt;/script&gt;
+</code></pre>
 
-<p>The site has been styled using assets from the game. Using CSS animations, I made the clouds move across the background.</p>
+<h3 id="how-it-works">How it works</h3>
+
+<ul>
+<li><code>var links = document.links;</code> - this will get a list of all the links on the page.</li>
+<li><code>for (var i = 0, linksLength = links.length; i &lt; linksLength; i++) {</code> - this will loop over every link.</li>
+<li><code>if (links[i].hostname != window.location.hostname) {</code> - check that the link is going to an external site.</li>
+<li><code>links[i].target = '_blank';</code> - add <code>target='_blank'</code> to the element, which will make this link open in a new tab/window.</li>
+</ul>
+
+<h3 id="original-jquery-solution">Original jQuery solution</h3>
+
+<pre><code>$(function() 
+{    
+    $(&quot;&quot;a[href^='http']:not([href*='&quot;&quot;+window.location.hostname+&quot;&quot;'])&quot;&quot;).attr(&quot;&quot;target&quot;&quot;,&quot;&quot;_blank&quot;&quot;);
+});
+</code></pre>
 
     </div>
 
