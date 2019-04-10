@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Martin Blackburn</title>
+    <link>/categories/javascript/</link>
+    <description>Recent content in Javascript on Martin Blackburn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open external links in a new window</title>
+      <link>/posts/2015-06-11-open-external-links-in-a-new-window/</link>
+      <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2015-06-11-open-external-links-in-a-new-window/</guid>
+      <description>Update 11/04/2018:
+I wrote this a long time ago, since then I&amp;rsquo;ve stopped using jQuery.
+I&amp;rsquo;m not saying that this is a good thing, in fact, it&amp;rsquo;s probably a bad thing. A user should always have the choice on if a link should open in a new window or not.
+However, this is a small bit of javascript that will make all external links open in a new tab/window.</description>
+    </item>
+    
+  </channel>
+</rss>
