@@ -37,5 +37,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Work</title>
+      <link>/categories/work/</link>
+      <pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/work/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
