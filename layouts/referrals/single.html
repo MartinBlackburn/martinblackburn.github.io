@@ -1,5 +1,7 @@
 {{ define "main" }}
-    {{ "<!-- Default single template -->" | safeHTML }}
+    {{ "<!-- Referrals single template -->" | safeHTML }}
+    
+    {{ partial "offers/monzo.html" . }}
     
     {{ $style := resources.Get "sass/content.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -7,4 +9,6 @@
     <div class="content">
         {{ .Content }}
     </div>
+    
+    {{ partial "offers/monzo.html" . }}
 {{ end }}

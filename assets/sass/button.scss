@@ -1,0 +1,25 @@
+@import "./units";
+@import "./colours";
+
+.button {
+    border: 0;
+    border-radius: 3px;
+    padding: $oneUnit $twoUnits;
+    display: inline-block;
+    
+    line-height: 1;
+    color: $white;
+    text-decoration: none;
+    
+    background: $buttonColour;
+    
+    transition: background 0.2s ease;
+    
+    cursor: pointer;
+}
+
+.button:hover {
+    background: darken($buttonColour, 5%);
+    
+    text-decoration: none;
+}

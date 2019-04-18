@@ -1,0 +1,8 @@
+{{ $style := resources.Get "sass/offer.scss" | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<a class="offer" href="https://join.monzo.com/r/b0ljzc8">
+    <div>Get £5 free when you sign up to Monzo.</div>
+    <div class="button">Get offer</div>
+    <div class="offer__note">Disclaimer: this is a referral link, so I'll get paid when you use the offer!</div>
+</a>

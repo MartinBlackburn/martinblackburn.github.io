@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Referrals on Martin Blackburn</title>
+    <link>/referrals/</link>
+    <description>Recent content in Referrals on Martin Blackburn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/referrals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monzo</title>
+      <link>/referrals/monzo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/referrals/monzo/</guid>
+      <description>What is monzo? Monzo is an online bank. But unlike all the old banks, it&amp;rsquo;s built on modern technology. This allows them to do amazing things like give you instant notification of payments.
+My experience I have used Monzo for a long time. So long that I was with them when they were called Mondo, and only offered a pre-paid card that needed topping up. Unlike today, where they are a fully fledge bank.</description>
+    </item>
+    
+  </channel>
+</rss>

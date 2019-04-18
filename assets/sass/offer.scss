@@ -1,0 +1,30 @@
+@import "./units";
+@import "./colours";
+
+.offer {
+    padding: $twoUnits;
+    margin-bottom: $twoUnits;
+    display: block;
+    
+    background: darken($lightGrey, 3%);
+    
+    text-align: center;
+    color: $black;
+}
+
+.offer:hover {
+    text-decoration: none;
+}
+
+.offer:last-child {
+    margin-top: $twoUnits;
+    margin-bottom: 0;
+}
+
+.offer .button {
+    margin: $twoUnits 0;
+}
+
+.offer__note {
+    font-size: 65%;
+}
