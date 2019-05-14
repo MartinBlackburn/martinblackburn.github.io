@@ -6,7 +6,7 @@
     <description>Recent content in Hmtl on Martin Blackburn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/hmtl/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Base element</title>
       <link>/posts/2019-05-14-base-element/</link>
-      <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/2019-05-14-base-element/</guid>
       <description>Let&amp;rsquo;s start with the MDN docs for the base element, they say: The HTML &amp;lt;base&amp;gt; element specifies the base URL to use for all relative URLs contained within a document.
