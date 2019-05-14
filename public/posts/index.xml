@@ -35,6 +35,17 @@ Lets break it down into parts:
     </item>
     
     <item>
+      <title>Base element</title>
+      <link>/posts/2019-05-14-base-element/</link>
+      <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019-05-14-base-element/</guid>
+      <description>Let&amp;rsquo;s start with the MDN docs for the base element, they say: The HTML &amp;lt;base&amp;gt; element specifies the base URL to use for all relative URLs contained within a document.
+That sounds like it could be pretty useful. You could change the base to be the root, so there would be no more getting relative/absolute URLs mixed up.
+&amp;lt;head&amp;gt; &amp;lt;base href=&amp;quot;/&amp;quot;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;a href=&amp;quot;test&amp;quot;&amp;gt;Relative URL&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/test&amp;quot;&amp;gt;Absolute URL&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://google.</description>
+    </item>
+    
+    <item>
       <title>Open external links in a new window</title>
       <link>/posts/2015-06-11-open-external-links-in-a-new-window/</link>
       <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>

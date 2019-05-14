@@ -8,7 +8,7 @@
 
 
     <title>
-    Categories - Martin Blackburn
+    Base element - Martin Blackburn
 </title>
 
 
@@ -68,28 +68,81 @@
 
 <section class="banner">
     <div class="banner__inner">
-        <h1 class="banner__title">Categories</h1>
-        <p class="banner__subtitle"></p>
+        <h1 class="banner__title">Base element</h1>
+        <p class="banner__subtitle">I just found out about the base element, so wanted to write about it</p>
     </div>
 </section>
 
 
     <div class="wrapper">
         
-    <!-- Default list template -->
+    <!-- Default single template -->
     
-        <a href="/categories/css/">2019-03-21 | Css</a>
     
-        <a href="/categories/food/">2019-04-04 | Food</a>
+    <link rel="stylesheet" href="/sass/content.min.css">
     
-        <a href="/categories/hmtl/">2019-03-21 | Hmtl</a>
-    
-        <a href="/categories/javascript/">2015-06-11 | Javascript</a>
-    
-        <a href="/categories/misc/">2014-08-16 | Misc</a>
-    
-        <a href="/categories/work/">2014-10-24 | Work</a>
-    
+    <div class="content">
+        
+
+<p>Let&rsquo;s start with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">MDN docs for the base element</a>, they say: The HTML <code>&lt;base&gt;</code> element specifies the base URL to use for all relative URLs contained within a document.</p>
+
+<p>That sounds like it could be pretty useful. You could change the base to be the root, so there would be no more getting relative/absolute URLs mixed up.</p>
+
+<pre><code>&lt;head&gt;
+    &lt;base href=&quot;/&quot;&gt;
+&lt;/head&gt;
+
+&lt;a href=&quot;test&quot;&gt;Relative URL&lt;/a&gt;
+&lt;a href=&quot;/test&quot;&gt;Absolute URL&lt;/a&gt;
+&lt;a href=&quot;https://google.co.uk&quot;&gt;External URL&lt;/a&gt;
+</code></pre>
+
+<p>If the code above was run on <code>martinblackburn.co.uk/some-page</code>, then each of the URL&rsquo;s would go to the following places:</p>
+
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>with <code>base</code></th>
+<th>without <code>base</code></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>test</td>
+<td>martinblackburn.co.uk/test</td>
+<td>martinblackburn.co.uk/some-page/test</td>
+</tr>
+
+<tr>
+<td>/test</td>
+<td>martinblackburn.co.uk/test</td>
+<td>martinblackburn.co.uk/test</td>
+</tr>
+
+<tr>
+<td><a href="https://google.co.uk">https://google.co.uk</a></td>
+<td><a href="https://google.co.uk">https://google.co.uk</a></td>
+<td><a href="https://google.co.uk">https://google.co.uk</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="target">Target</h3>
+
+<p>You can also specify a <code>target</code> on the base element.</p>
+
+<pre><code>&lt;head&gt;
+    &lt;base href=&quot;/&quot; target=&quot;_blank&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>This is a much nicer way to open all URLs in a new window, better than the <a href="/posts/2015-06-11-open-external-links-in-a-new-window/">javascript option</a> I did previously.</p>
+
+<p>You can overwrite each URL to open where you want, so <code>&lt;a href='/some-page' target='_self'&gt;Some page&lt;/a&gt;</code> will make that link open in the same window.</p>
+
+    </div>
 
     </div>
 </body>
