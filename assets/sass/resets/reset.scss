@@ -38,3 +38,18 @@ hr {
     
     background: lighten($featuredColour, 40%);
 }
+
+table {
+    width: 100%;
+    border: 1px solid $darkGrey;
+    margin-bottom: $twoUnits;
+    
+    border-collapse: collapse;
+    
+    font-size: 80%;
+}
+
+th, td {
+    border: 1px solid $darkGrey;
+    padding: $oneUnit;
+}
