@@ -12,12 +12,24 @@ exports[`Brands component renders correctly 1`] = `
       class="brands__images"
     >
       <img
+        alt="bbc logo"
+        src="/images/brands/bbc.png"
+      />
+      <img
+        alt="gripple logo"
+        src="/images/brands/gripple.png"
+      />
+      <img
         alt="guardian jobs logo"
         src="/images/brands/guardian jobs.png"
       />
       <img
         alt="lapicida logo"
         src="/images/brands/lapicida.png"
+      />
+      <img
+        alt="national club golfer logo"
+        src="/images/brands/national club golfer.png"
       />
       <img
         alt="wren kitchens logo"
