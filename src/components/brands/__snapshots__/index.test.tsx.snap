@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Brands component renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="brands"
+  >
+    <h1>
+      Brands I've work with:
+    </h1>
+    <div
+      class="brands__images"
+    >
+      <img
+        alt="guardian jobs logo"
+        src="/images/brands/guardian jobs.png"
+      />
+      <img
+        alt="lapicida logo"
+        src="/images/brands/lapicida.png"
+      />
+      <img
+        alt="wren kitchens logo"
+        src="/images/brands/new scientist.png"
+      />
+      <img
+        alt="sky betting logo"
+        src="/images/brands/sky betting.png"
+      />
+      <img
+        alt="washington post logo"
+        src="/images/brands/washington post.png"
+      />
+      <img
+        alt="wren kitchens logo"
+        src="/images/brands/wren kitchens.png"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

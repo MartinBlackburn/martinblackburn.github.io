@@ -8,11 +8,14 @@ import "./index.scss";
 // App
 // import Nav from "./components/nav";
 import Header from "./components/header";
-// import Timeline from "./components/timeline";
+import About from "./components/about";
+import Brands from "./components/brands";
 
 ReactDOM.render(
     <React.StrictMode>
         <Header />
+        <About />
+        <Brands />
     </React.StrictMode>,
     document.getElementById("root")
 );

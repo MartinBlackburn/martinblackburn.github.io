@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="about"
+  >
+    <h1>
+      I'm a lead software engineer, specialising in 
+      <strong>
+        JavaScript/TypeScript
+      </strong>
+      , 
+      <strong>
+        React
+      </strong>
+       and 
+      <strong>
+        mentoring other aspiring developers
+      </strong>
+      .
+    </h1>
+  </section>
+</DocumentFragment>
+`;

@@ -2,7 +2,7 @@
 
 exports[`Header component renders correctly 1`] = `
 <DocumentFragment>
-  <div
+  <header
     class="header"
     style="background-image: url(/images/background.jpg);"
   >
@@ -15,14 +15,14 @@ exports[`Header component renders correctly 1`] = `
     >
       // Hello world
     </div>
-    <div
+    <h1
       class="header__name"
     >
       I'm Martin Blackburn
-    </div>
+    </h1>
     <div>
       typewriter
     </div>
-  </div>
+  </header>
 </DocumentFragment>
 `;

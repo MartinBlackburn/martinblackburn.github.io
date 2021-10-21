@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: center;
 
+    color: #fff;
     text-align: center;
+    line-height: 1.2;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,10 +32,14 @@
 
 .header__intro {
     font-size: 20px;
+    font-style: italic;
 }
 
 .header__name {
+    margin-bottom: 0;
+
     font-size: 28px;
+    font-weight: normal;
 
     @media screen and (min-width: 400px) {
         font-size: 40px;
