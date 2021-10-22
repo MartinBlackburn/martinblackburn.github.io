@@ -2,14 +2,14 @@
 import { render } from "@testing-library/react";
 
 // component under test
-import Timeline from "./";
+import Hobbies from "./";
 
 // mocks
-jest.mock("../timelineItem", () => () => <div>timelineItem</div>);
+jest.mock("./hobby", () => () => <div>hobby</div>);
 
-describe("Timeline component", () => {
+describe("Hobbies component", () => {
     test("renders correctly", () => {
-        const { asFragment } = render(<Timeline />);
+        const { asFragment } = render(<Hobbies />);
 
         expect(asFragment()).toMatchSnapshot();
     });

@@ -6,7 +6,7 @@ exports[`Brands component renders correctly 1`] = `
     class="brands"
   >
     <h1>
-      Brands I've work with:
+      Brands I've worked with:
     </h1>
     <div
       class="brands__images"

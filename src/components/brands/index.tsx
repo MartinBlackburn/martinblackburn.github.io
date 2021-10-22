@@ -6,7 +6,7 @@ import "./styles.scss";
 const Brands = () => {
     return (
         <section className="brands">
-            <h1>Brands I've work with:</h1>
+            <h1>Brands I've worked with:</h1>
 
             <div className="brands__images">
                 <img src="/images/brands/bbc.png" alt="bbc logo" />
