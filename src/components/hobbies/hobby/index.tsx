@@ -13,13 +13,11 @@ interface IComponentProps {
 const Hobby = (props: IComponentProps) => {
     return (
         <div className="hobby">
+            <h2 className="hobby__title">{props.title}</h2>
             <div className="hobby__image">
                 <img src={`/images/hobbies/${props.image}`} alt={`illustration of someone ${props.title}`} />
             </div>
-            <div className="hobby__content">
-                <h2 className="hobby__title">{props.title}</h2>
-                {props.text}
-            </div>
+            <div className="hobby__content">{props.text}</div>
         </div>
     );
 };
