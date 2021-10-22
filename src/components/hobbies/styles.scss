@@ -1,0 +1,15 @@
+.hobbies {
+    padding: 50px 20px;
+}
+
+.hobbies h1 {
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.hobbies__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

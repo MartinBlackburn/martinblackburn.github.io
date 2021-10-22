@@ -1,0 +1,46 @@
+.hobby {
+    max-width: 750px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hobby:nth-child(odd) .hobby__image {
+    margin-left: 20px;
+    margin-right: 0;
+
+    order: 1;
+}
+
+.hobby:last-child {
+    margin-bottom: 0;
+}
+
+.hobby__image {
+    width: 150px;
+    min-width: 150px;
+    margin-right: 20px;
+}
+
+.hobby__image img {
+    width: 100%;
+    height: auto;
+}
+
+.hobby li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.hobby li:first-child {
+    margin-left: 0;
+}
+
+.hobby li::after {
+    content: ",";
+}
+
+.hobby li:last-child::after {
+    content: ".";
+}

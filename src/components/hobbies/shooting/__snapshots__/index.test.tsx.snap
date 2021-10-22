@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShootingText component renders correctly 1`] = `
+<DocumentFragment>
+  <p>
+    I recently joined 
+    <a
+      href="http://www.yorkrifle.club/"
+    >
+      York rifle club
+    </a>
+    . It's still early days and I'm not a great shot, but it's a fun sport and everyone is incredible friendly and helpful. Looking forward to seeing how much I improve over the next few months.
+  </p>
+</DocumentFragment>
+`;
