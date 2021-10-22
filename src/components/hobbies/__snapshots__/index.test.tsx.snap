@@ -23,9 +23,6 @@ exports[`Hobbies component renders correctly 1`] = `
       <div>
         hobby
       </div>
-      <div>
-        hobby
-      </div>
     </div>
   </section>
 </DocumentFragment>
