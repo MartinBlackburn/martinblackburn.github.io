@@ -131,9 +131,9 @@ const HousePage = () => {
 
                 <TimelineItem dark={true} title="Price reduction" date="2022/06/29">
                     <p>
-                        With a lot of back and forth, we ended up with a £25,500 price reduction. Hopefully enough to
-                        cover most of the work needed. This also reduces our stamp duty bill by £1,275. So a total of
-                        £26,775 saved that we can use towards repairs.
+                        With a lot of back and forth, we ended up with a £25,500 price reduction. This also reduces our
+                        stamp duty bill by £1,275. So a total of £26,775 saved that we can use towards repairs.
+                        Hopefully enough to cover most of the work needed.
                     </p>
                     <p>
                         It does mean we are still paying £15,000 over the value of the house, but as it's a house for
