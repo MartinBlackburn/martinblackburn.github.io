@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoodGymText component renders correctly 1`] = `
+<DocumentFragment>
+  <p>
+    I am a member of the 
+    <a
+      href="https://www.goodgym.org"
+    >
+      Good Gym
+    </a>
+    . Who are a group of runners who get together to help out in the community. Projects can range from tidying up public spaces, to running (literally) errands for people unable to do so themselves.
+  </p>
+  <p>
+    While being with Good Gym I've currently run about 175km and done 35 good deeds.
+  </p>
+</DocumentFragment>
+`;
