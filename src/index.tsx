@@ -1,23 +1,23 @@
 // libraries
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // styles
 import "./index.scss";
 
-// App
-// import Nav from "./components/nav";
-import Header from "./components/header";
-import About from "./components/about";
-import Brands from "./components/brands";
-import Hobbies from "./components/hobbies";
+// pages
+import HomePage from "./pages/home";
+import HousePage from "./pages/house";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Header />
-        <About />
-        <Brands />
-        <Hobbies />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/house" element={<HousePage />} />
+            </Routes>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
 );

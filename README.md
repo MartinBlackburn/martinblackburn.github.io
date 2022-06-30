@@ -13,4 +13,4 @@ Launches the test runner in interactive watch mode.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder. This gets built to a `docs` folder, so that it can be published on GitHub Pages without having to make a new branch.
+Builds the app for production to the `docs` folder, so that it can be published on GitHub Pages without having to make a new branch.
