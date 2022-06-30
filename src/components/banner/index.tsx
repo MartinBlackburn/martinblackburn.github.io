@@ -10,15 +10,24 @@ interface IComponentProps {
     introText: string;
     titleText: string;
     children?: JSX.Element;
+    darken?: boolean;
 }
 
 const Banner = (props: IComponentProps) => {
-    return (
-        <header className="banner" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
-            {props.profileImage && <img src={props.profileImage} alt="profile" />}
+    let classes = "banner";
 
-            <div className="banner__intro">{props.introText}</div>
-            <h1 className="banner__name">{props.titleText}</h1>
+    if (props.darken) {
+        classes += " banner--darken";
+    }
+
+    return (
+        <header className={classes} style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+            {props.profileImage && <img className="banner__profile" src={props.profileImage} alt="profile" />}
+
+            <div className="banner__text">
+                <div className="banner__intro">{props.introText}</div>
+                <h1 className="banner__name">{props.titleText}</h1>
+            </div>
 
             {props.children}
         </header>

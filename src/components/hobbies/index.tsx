@@ -4,7 +4,6 @@ import React from "react";
 import Hobby from "./hobby";
 import GoodGymText from "./goodGym";
 import ClimbingText from "./climbing";
-// import ShootingText from "./shooting";
 import GamingText from "./gaming";
 import CookingText from "./cooking";
 
@@ -19,7 +18,6 @@ const Hobbies = () => {
             <div className="hobbies__list">
                 <Hobby title="Running" image="running.png" text={<GoodGymText />} />
                 <Hobby title="Climbing" image="climbing.png" text={<ClimbingText />} />
-                {/* <Hobby title="Shooting" image="shooting.png" text={<ShootingText />} /> */}
                 <Hobby title="Gaming" image="gaming.png" text={<GamingText />} />
                 <Hobby title="Cooking" image="cooking.png" text={<CookingText />} />
             </div>

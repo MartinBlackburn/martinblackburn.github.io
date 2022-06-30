@@ -1,27 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component renders correctly 1`] = `
+exports[`Banner component renders correctly with profile image 1`] = `
 <DocumentFragment>
   <header
-    class="header"
-    style="background-image: url(/images/background.jpg);"
+    class="banner"
+    style="background-image: url(/background.png);"
   >
     <img
       alt="profile"
-      src="/images/profile.jpg"
+      class="banner__profile"
+      src="/profile.png"
     />
     <div
-      class="header__intro"
+      class="banner__text"
     >
-      // Hello world
+      <div
+        class="banner__intro"
+      >
+        // hello world
+      </div>
+      <h1
+        class="banner__name"
+      >
+        I'm Martin Blackburn
+      </h1>
     </div>
-    <h1
-      class="header__name"
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Banner component renders correctly without profile image 1`] = `
+<DocumentFragment>
+  <header
+    class="banner"
+    style="background-image: url(/background.png);"
+  >
+    <div
+      class="banner__text"
     >
-      I'm Martin Blackburn
-    </h1>
-    <div>
-      typewriter
+      <div
+        class="banner__intro"
+      >
+        // hello world
+      </div>
+      <h1
+        class="banner__name"
+      >
+        I'm Martin Blackburn
+      </h1>
     </div>
   </header>
 </DocumentFragment>
