@@ -5,9 +5,27 @@ import { render } from "@testing-library/react";
 import Timeline from ".";
 
 describe("Timeline component", () => {
-    test("with profile image", () => {
-        const { asFragment } = render(<Timeline />);
+    describe("renders correctly", () => {
+        test("without dark mode", () => {
+            const { asFragment } = render(<Timeline title="some title" />);
 
-        expect(asFragment()).toMatchSnapshot();
+            expect(asFragment()).toMatchSnapshot();
+        });
+
+        test("with dark mode", () => {
+            const { asFragment } = render(<Timeline title="some title" dark={true} />);
+
+            expect(asFragment()).toMatchSnapshot();
+        });
+
+        test("with children", () => {
+            const { asFragment } = render(
+                <Timeline title="some title" dark={true}>
+                    <div>test</div>
+                </Timeline>
+            );
+
+            expect(asFragment()).toMatchSnapshot();
+        });
     });
 });

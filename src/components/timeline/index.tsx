@@ -8,7 +8,7 @@ import "./styles.scss";
 interface IComponentProps {
     title: string;
     dark?: boolean;
-    children: JSX.Element | JSX.Element[];
+    children?: React.ReactNode;
 }
 
 const Timeline = (props: IComponentProps) => {

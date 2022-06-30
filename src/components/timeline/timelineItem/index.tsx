@@ -12,7 +12,7 @@ interface IComponentProps {
     title: string;
     date: string;
     dark?: boolean;
-    children: JSX.Element | JSX.Element[];
+    children?: React.ReactNode;
 }
 
 const TimelineItem = (props: IComponentProps) => {

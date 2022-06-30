@@ -9,7 +9,7 @@ interface IComponentProps {
     profileImage?: string;
     introText: string;
     titleText: string;
-    children?: JSX.Element;
+    children?: React.ReactNode;
     darken?: boolean;
 }
 
