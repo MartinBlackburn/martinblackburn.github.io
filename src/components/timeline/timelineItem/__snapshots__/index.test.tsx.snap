@@ -1,17 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimelineItem component renders correctly 1`] = `
+exports[`TimelineItem component renders correctly with children 1`] = `
 <DocumentFragment>
   <div
     class="timelineItem"
   >
     <h2
       class="timelineItemTitle"
-    />
-    <time
-      datetime="NaN-NaN-NaN"
     >
-      NaN undefined NaN
+      some title
+    </h2>
+    <time
+      datetime="1986-02-11"
+    >
+      11 February 1986
+    </time>
+    <div>
+      test
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TimelineItem component renders correctly with dark mode 1`] = `
+<DocumentFragment>
+  <div
+    class="timelineItem timelineItem--dark"
+  >
+    <h2
+      class="timelineItemTitle"
+    >
+      some title
+    </h2>
+    <time
+      datetime="1986-02-11"
+    >
+      11 February 1986
+    </time>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TimelineItem component renders correctly without dark mode 1`] = `
+<DocumentFragment>
+  <div
+    class="timelineItem"
+  >
+    <h2
+      class="timelineItemTitle"
+    >
+      some title
+    </h2>
+    <time
+      datetime="1986-02-11"
+    >
+      11 February 1986
     </time>
   </div>
 </DocumentFragment>

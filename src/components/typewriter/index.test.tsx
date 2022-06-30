@@ -5,16 +5,17 @@ import { act, render } from "@testing-library/react";
 import Typewriter from "./";
 
 // mocks
-jest.spyOn(window, "setInterval");
+jest.useFakeTimers();
+jest.spyOn(global, "setInterval");
+jest.spyOn(global, "clearInterval");
 
-describe("TimelineItem component", () => {
+describe("Typewriter component", () => {
     beforeEach(() => {
         jest.useFakeTimers();
     });
 
     afterEach(() => {
         jest.clearAllTimers();
-        jest.useRealTimers();
     });
 
     test("renders correctly", () => {
@@ -24,7 +25,7 @@ describe("TimelineItem component", () => {
     });
 
     test("renders correctly after 1.4 seconds", () => {
-        const { asFragment } = render(<Typewriter />);
+        const { asFragment, rerender } = render(<Typewriter />);
 
         act(() => {
             jest.advanceTimersByTime(1400);
@@ -34,7 +35,7 @@ describe("TimelineItem component", () => {
     });
 
     test("renders correctly after 5 seconds", () => {
-        const { asFragment } = render(<Typewriter />);
+        const { asFragment, rerender } = render(<Typewriter />);
 
         act(() => {
             jest.advanceTimersByTime(5000);
@@ -54,6 +55,6 @@ describe("TimelineItem component", () => {
 
         unmount();
 
-        expect(clearInterval).toHaveBeenCalledTimes(2);
+        expect(clearInterval).toHaveBeenCalledTimes(1);
     });
 });

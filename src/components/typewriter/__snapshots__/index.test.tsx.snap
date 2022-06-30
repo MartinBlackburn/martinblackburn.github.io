@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimelineItem component renders correctly 1`] = `
+exports[`Typewriter component renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="typewriter"
@@ -8,22 +8,18 @@ exports[`TimelineItem component renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TimelineItem component renders correctly after 1.4 seconds 1`] = `
+exports[`Typewriter component renders correctly after 1.4 seconds 1`] = `
 <DocumentFragment>
   <div
     class="typewriter"
-  >
-    Web developer
-  </div>
+  />
 </DocumentFragment>
 `;
 
-exports[`TimelineItem component renders correctly after 5 seconds 1`] = `
+exports[`Typewriter component renders correctly after 5 seconds 1`] = `
 <DocumentFragment>
   <div
     class="typewriter"
-  >
-    Manager
-  </div>
+  />
 </DocumentFragment>
 `;

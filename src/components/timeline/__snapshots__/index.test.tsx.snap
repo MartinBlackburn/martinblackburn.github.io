@@ -1,13 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timeline component with profile image 1`] = `
+exports[`Timeline component renders correctly with children 1`] = `
+<DocumentFragment>
+  <div
+    class="timeline timeline--dark"
+  >
+    <h1
+      class="timeline__title"
+    >
+      some title
+    </h1>
+    <div
+      class="timeline__content"
+    >
+      <div>
+        test
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timeline component renders correctly with dark mode 1`] = `
+<DocumentFragment>
+  <div
+    class="timeline timeline--dark"
+  >
+    <h1
+      class="timeline__title"
+    >
+      some title
+    </h1>
+    <div
+      class="timeline__content"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timeline component renders correctly without dark mode 1`] = `
 <DocumentFragment>
   <div
     class="timeline"
   >
     <h1
       class="timeline__title"
-    />
+    >
+      some title
+    </h1>
     <div
       class="timeline__content"
     />
