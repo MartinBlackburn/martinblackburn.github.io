@@ -10,17 +10,17 @@ const House2Timeline = () => {
         <Timeline dark={true} title="House 2">
             <TimelineItem dark={true} title="Offer accepted" date="2022/03/15">
                 <p>
-                    We got pretty lucky and a house came up not too long after we lost the last one. £40,000 over asking
-                    this time, eeek.
+                    We got pretty lucky and a house came up not too long after we lost the last one. After a little
+                    bidding war we won! Although it was £40,000 over asking this time, eeek.
                 </p>
                 <p>
-                    They already have an house offer accept, a new build, but we do have to wait until august for that
+                    They already have an house offer accepted, a new build, but we do have to wait until august for that
                     to be completed.
                 </p>
             </TimelineItem>
 
             <TimelineItem dark={true} title="Mortgage down valued" date="2022/05/09">
-                <p>The mortgage was rejected, they didn't believe the house was worth our offer.</p>
+                <p>The mortgage was rejected, they didn't think the house was worth our offer.</p>
                 <p>
                     Our mortgage broker said this has happened a lot recently with this particular mortgage provider and
                     we should try another.
@@ -29,7 +29,7 @@ const House2Timeline = () => {
 
             <TimelineItem dark={true} title="Mortgage down valued again" date="2022/05/19">
                 <p>The mortgage was rejected with another lender. Uh oh.</p>
-                <p>We now have two options, make up the difference ourselves, or negotiate the price.</p>
+                <p>We now have two options, make up the difference ourselves (£40,000), or negotiate the price.</p>
                 <p>
                     The seller has refused to reduce the price, so we agreed to make up the difference so long as the
                     survey came back ok.
@@ -61,7 +61,8 @@ const House2Timeline = () => {
                 </p>
                 <p>
                     We may not be able to do all the repairs/decorating we wanted in one go due to the cost. However,
-                    the discount will allow us to do the major ones, such as the roof replacement and fix the damp.
+                    the discount will allow us to do the major ones, such as the roof replacement and fix the damp
+                    problems.
                 </p>
             </TimelineItem>
         </Timeline>
