@@ -1,6 +1,6 @@
 // libraries
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 // styles
@@ -10,7 +10,10 @@ import "./index.scss";
 import HomePage from "./pages/home";
 import HousePage from "./pages/house";
 
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container!);
+
+root.render(
     <React.StrictMode>
         <HashRouter>
             <Routes>
@@ -18,6 +21,5 @@ ReactDOM.render(
                 <Route path="/house" element={<HousePage />} />
             </Routes>
         </HashRouter>
-    </React.StrictMode>,
-    document.getElementById("root")
+    </React.StrictMode>
 );
