@@ -10,7 +10,7 @@ const GamingText = () => {
                 friends, and maybe even a drink or two.
             </p>
             <p>
-                Currently we are playing through <a href="https://borderlands.com/">Borderlands 3</a>, god bless that
+                Currently, we are playing through <a href="https://borderlands.com/">Borderlands 3</a>, god bless that
                 little <a href="https://en.wikipedia.org/wiki/Claptrap">Claptrap</a>.
             </p>
         </React.Fragment>

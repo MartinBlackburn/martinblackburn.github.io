@@ -5,9 +5,9 @@ const CookingText = () => {
     return (
         <React.Fragment>
             <p>
-                During lock down I found myself with a lot more spare time, so I started cooking more. I found lots of
-                new recipes, which are not only healthier, but also tastier than just getting takeaway. Here's a few of
-                my new found favorites:
+                During lockdown I found myself with a lot more spare time, so I started cooking more. I found lots of
+                new recipes, which are not only healthier, but also tastier than just getting takeaway. Here are a few
+                of my newfound favourites:
             </p>
             <ul>
                 <li>
