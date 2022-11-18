@@ -125,6 +125,22 @@ const House2Timeline = () => {
                     year.
                 </p>
             </TimelineItem>
+
+            <TimelineItem dark={true} title="Can we move yet?" date="2022/10/15">
+                <p>
+                    There has been lots of back and forth over the last month, we don't seem to be any closer to
+                    exchanging either.
+                </p>
+            </TimelineItem>
+
+            <TimelineItem dark={true} title="Exchange time" date="2022/11/17">
+                <p>We have finally exchanged and have a completion date.</p>
+                <p>We'll be getting our keys on next week. Wooooooo!!!</p>
+                <p>
+                    Now the fun starts of getting repairs and decorating, as well as organising all the boring, but
+                    essential things, like insurance.
+                </p>
+            </TimelineItem>
         </Timeline>
     );
 };
