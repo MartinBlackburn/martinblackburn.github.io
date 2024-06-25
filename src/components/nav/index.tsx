@@ -1,25 +1,30 @@
+//libraries
 import React from "react";
+
+// constants
+import { NavItems, NavItem } from "../../constants/navItems";
 
 // styles
 import "./styles.scss";
 
-const Nav = () => {
+interface IProps {
+    onClick: (navItem: NavItem) => void;
+}
+
+const Nav = (props: IProps) => {
+    let navItemElements: React.ReactElement[] = [];
+
+    NavItems.forEach((navItem) => {
+        navItemElements.push(
+            <li key={navItem.name}>
+                <a onClick={() => props.onClick(navItem)}>{navItem.name}</a>
+            </li>
+        );
+    });
+
     return (
         <div className="nav">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">My journey</a>
-                </li>
-                <li>
-                    <a href="/">Contact</a>
-                </li>
-            </ul>
+            <ul>{navItemElements}</ul>
         </div>
     );
 };

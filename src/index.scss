@@ -51,3 +51,10 @@ img {
     width: 100%;
     height: auto;
 }
+
+iframe {
+    width: 100%;
+    border: 0;
+    min-height: 50vh;
+    overflow-y: hidden;
+}
