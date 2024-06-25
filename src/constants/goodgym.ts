@@ -1,2 +1,2 @@
-export const distance = "257km";
-export const goodDeeds = 51;
+export const distance = "600km";
+export const goodDeeds = 118;
