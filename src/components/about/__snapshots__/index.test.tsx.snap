@@ -6,7 +6,7 @@ exports[`About component renders correctly 1`] = `
     class="about"
   >
     <h1>
-      I'm a lead software engineer, specialising in 
+      I'm an Engineering Manager, specialising in 
       <strong>
         JavaScript/TypeScript
       </strong>

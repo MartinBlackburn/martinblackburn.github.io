@@ -7,7 +7,7 @@ const About = () => {
     return (
         <section className="about">
             <h1>
-                I'm a lead software engineer, specialising in <strong>JavaScript/TypeScript</strong>,{" "}
+                I'm an Engineering Manager, specialising in <strong>JavaScript/TypeScript</strong>,{" "}
                 <strong>React</strong> and <strong>mentoring other aspiring developers</strong>.
             </h1>
         </section>
