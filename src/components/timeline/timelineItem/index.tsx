@@ -10,7 +10,8 @@ import "./styles.scss";
 // types
 interface IComponentProps {
     title: string;
-    date: string;
+    startDate: string;
+    endDate?: string;
     dark?: boolean;
     children?: React.ReactNode;
 }
@@ -22,10 +23,23 @@ const TimelineItem = (props: IComponentProps) => {
         classes += " timelineItem--dark";
     }
 
+    let endDate = null;
+
+    if (props.endDate === "present") {
+        endDate = "present";
+    }
+
+    if (props.endDate && props.endDate !== "present") {
+        endDate = <DateComponent date={new Date(props.endDate)} />;
+    }
+
     return (
         <div className={classes}>
-            <h2 className="timelineItemTitle">{props.title}</h2>
-            <DateComponent date={new Date(props.date)} />
+            <h2 className="timelineItem__title">{props.title}</h2>
+
+            <div className="timelineItem__date">
+                <DateComponent date={new Date(props.startDate)} /> {endDate ? " - " : ""} {endDate}
+            </div>
 
             {props.children}
         </div>

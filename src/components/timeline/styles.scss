@@ -1,5 +1,5 @@
 .timeline {
-    padding: 20px 0;
+    padding: 50px 0;
 
     position: relative;
 
@@ -11,7 +11,9 @@
 }
 
 .timeline__title {
-    text-align: center;
+    padding-left: 60px;
+    margin: 0 auto 50px auto;
+    max-width: 750px;
 }
 
 .timeline--dark .timeline__title {
@@ -28,65 +30,12 @@
 .timeline__content::after {
     content: "";
     width: 6px;
-    height: 200%;
+    height: 250%;
 
     background: #4284ee;
 
     position: absolute;
-    top: -100px;
+    top: -150px;
     bottom: 0;
-    left: 20px;
-}
-
-.timeline__item {
-    padding: 20px;
-    margin-left: 60px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    background: rgba(0, 0, 0, 0.2);
-
-    position: relative;
-}
-
-.timeline__item::before {
-    content: "";
-
-    width: 25px;
-    height: 25px;
-    border: 4px solid #4284ee;
-    border-radius: 50%;
-
-    background: white;
-
-    position: absolute;
-    left: -50px;
-    top: 15px;
-    z-index: 1;
-}
-
-.timeline__item::after {
-    content: " ";
-
-    height: 0;
-    width: 0;
-    border: medium solid rgba(0, 0, 0, 0.2);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(0, 0, 0, 0.2) transparent transparent;
-
-    position: absolute;
-    top: 17px;
-    left: -10px;
-    z-index: 1;
-}
-
-.timeline__itemTitle {
-    margin-bottom: 0;
-}
-
-.timeline__item time {
-    display: block;
-    margin-bottom: 10px;
-
-    font-size: 80%;
+    left: 23px;
 }

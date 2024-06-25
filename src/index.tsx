@@ -6,13 +6,13 @@ import { createRoot } from "react-dom/client";
 import "./index.scss";
 
 // pages
-import HomePage from "./pages/home";
+import BasePage from "./pages/base";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
 root.render(
     <React.StrictMode>
-        <HomePage />
+        <BasePage />
     </React.StrictMode>
 );

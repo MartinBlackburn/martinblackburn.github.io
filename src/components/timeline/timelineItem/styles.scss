@@ -54,13 +54,34 @@
     border-color: transparent #fff transparent transparent;
 }
 
-.timelineItemTitle {
-    margin-bottom: 0;
+.timelineItem__title {
+    margin-bottom: 10px;
 }
 
-.timelineItem time {
-    display: block;
+.timelineItem__date {
     margin-bottom: 10px;
 
     font-size: 80%;
+}
+
+.timelineItem a {
+    color: #fff;
+}
+
+.timelineItem a:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.timelineItem--dark a {
+    color: #243f42;
+}
+
+.timelineItem--dark a:hover {
+    color: #243f42;
+    opacity: 0.8;
+}
+
+.timelineItem ul {
+    margin-left: 15px;
 }

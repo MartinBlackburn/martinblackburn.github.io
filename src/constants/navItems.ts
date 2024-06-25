@@ -1,23 +1,40 @@
 export enum NavItemType {
-    link = "link",
-    iframe = "iframe",
+    page = "page",
+    subNav = "subNav",
 }
 
 export interface NavItem {
     name: string;
-    source: string;
+    componentPath?: string;
     type: NavItemType;
+    subNav?: NavItem[];
 }
 
 export const NavItems: NavItem[] = [
     {
         name: "Home",
-        source: "/",
-        type: NavItemType.link,
+        componentPath: "./home",
+        type: NavItemType.page,
     },
     {
         name: "Résumé",
-        source: "https://martin.blackburn.dev/cv",
-        type: NavItemType.iframe,
+        componentPath: "./resume",
+        type: NavItemType.page,
     },
+    // {
+    //     name: "Projects",
+    //     type: NavItemType.subNav,
+    //     subNav: [
+    //         {
+    //             name: "Kitchen Renovation",
+    //             componentPath: "/projects/kitchen-renovation",
+    //             type: NavItemType.page,
+    //         },
+    //         {
+    //             name: "Shuffleboard",
+    //             componentPath: "/projects/shuffleboard",
+    //             type: NavItemType.page,
+    //         },
+    //     ],
+    // },
 ];

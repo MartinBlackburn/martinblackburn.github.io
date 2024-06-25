@@ -8,7 +8,7 @@ import TimelineItem from "../timelineItem";
 const House2Timeline = () => {
     return (
         <Timeline dark={true} title="House 2">
-            <TimelineItem dark={true} title="Offer accepted" date="2022/03/15">
+            <TimelineItem dark={true} title="Offer accepted" startDate="2022/03/15">
                 <p>
                     We got pretty lucky and a house came up not too long after we lost the last one. After a little
                     bidding war we won! Although it was £40,000 over asking this time, eeek.
@@ -19,7 +19,7 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Mortgage down valued" date="2022/05/09">
+            <TimelineItem dark={true} title="Mortgage down valued" startDate="2022/05/09">
                 <p>The mortgage was rejected, they didn't think the house was worth our offer.</p>
                 <p>
                     Our mortgage broker said this has happened a lot recently with this particular mortgage provider and
@@ -27,7 +27,7 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Mortgage down valued again" date="2022/05/19">
+            <TimelineItem dark={true} title="Mortgage down valued again" startDate="2022/05/19">
                 <p>The mortgage was rejected with another lender. Uh oh.</p>
                 <p>We now have two options, make up the difference ourselves (£40,000), or negotiate the price.</p>
                 <p>
@@ -36,7 +36,7 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Survey results" date="2022/06/13">
+            <TimelineItem dark={true} title="Survey results" startDate="2022/06/13">
                 <p>
                     Not good news, the survey listed several major issues, roof replacement, conservatory replacement,
                     penetrating damp on the first floor, rising damp on the ground floor, a crack in the external wall,
@@ -49,7 +49,7 @@ const House2Timeline = () => {
                 <p>After several quotes, the work looks like it could be anywhere from £20,000 to £60,000 to do.</p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Price reduction" date="2022/06/29">
+            <TimelineItem dark={true} title="Price reduction" startDate="2022/06/29">
                 <p>
                     With a lot of back and forth, we ended up with a £25,500 price reduction. This also reduces our
                     stamp duty bill by £1,275. So a total of £26,775 saved that we can use towards repairs. Hopefully
@@ -66,39 +66,39 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Initial report" date="2022/07/04">
+            <TimelineItem dark={true} title="Initial report" startDate="2022/07/04">
                 <p>
                     We have the initial report from our solicitor. It's outstanding a few enquires from the sellers
                     solicitor, but we should get these soon.
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Still outstanding enquires" date="2022/07/21">
+            <TimelineItem dark={true} title="Still outstanding enquires" startDate="2022/07/21">
                 <p>
                     Still waiting on enquiries from the solicitors. Not even sure what they think they are missing at
                     this point, there is very little communication from either solicitor.
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Ready to sign?" date="2022/08/01">
+            <TimelineItem dark={true} title="Ready to sign?" startDate="2022/08/01">
                 <p>Our solicitor just said we'll have the contracts ready to sign buy the end of the week.</p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Nup not ready" date="2022/08/11">
+            <TimelineItem dark={true} title="Nup not ready" startDate="2022/08/11">
                 <p>
                     Despite what we were told last week, our solicitor clearly never looked at the file and we are still
                     missing some things from the sellers solicitor.
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Talk to each other" date="2022/08/12">
+            <TimelineItem dark={true} title="Talk to each other" startDate="2022/08/12">
                 <p>The estate agent doesn't think there was anything out standing, but our solicitor does.</p>
                 <p>
                     So we have copied them both in on an email asking what they are missing and who needs to provide it.
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Different name" date="2022/08/17">
+            <TimelineItem dark={true} title="Different name" startDate="2022/08/17">
                 <p>
                     Turns out the seller was married after buying the house. So the title deeds with land registry don't
                     reflect her current name. I thought this would have been a basic thing they should have checked at
@@ -107,7 +107,7 @@ const House2Timeline = () => {
                 <p>So the seller will need to update land registry before we can carry on with the purchase.</p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Autograph time?" date="2022/09/06">
+            <TimelineItem dark={true} title="Autograph time?" startDate="2022/09/06">
                 <p>We have finally got our contracts and can now sign and send them off to the solicitors.</p>
                 <p>
                     Actually no, it's full of mistakes and so need to have them amended. Obvious mistakes too, like: the
@@ -115,7 +115,7 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Now it's autograph time" date="2022/09/07">
+            <TimelineItem dark={true} title="Now it's autograph time" startDate="2022/09/07">
                 <p>
                     We have finally got our <em>correct</em> contracts and can now sign and send them off to the
                     solicitors.
@@ -126,14 +126,14 @@ const House2Timeline = () => {
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Can we move yet?" date="2022/10/15">
+            <TimelineItem dark={true} title="Can we move yet?" startDate="2022/10/15">
                 <p>
                     There has been lots of back and forth over the last month, we don't seem to be any closer to
                     exchanging either.
                 </p>
             </TimelineItem>
 
-            <TimelineItem dark={true} title="Exchange time" date="2022/11/17">
+            <TimelineItem dark={true} title="Exchange time" startDate="2022/11/17">
                 <p>We have finally exchanged and have a completion date.</p>
                 <p>We'll be getting our keys on next week. Wooooooo!!!</p>
                 <p>
