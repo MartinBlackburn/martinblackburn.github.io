@@ -5,7 +5,7 @@ import { render } from "@testing-library/react";
 import Banner from ".";
 
 describe("Banner component", () => {
-    describe("renders correctly", () => {
+    describe("snapshots", () => {
         test("with profile image", () => {
             const { asFragment } = render(
                 <Banner
@@ -22,6 +22,34 @@ describe("Banner component", () => {
         test("without profile image", () => {
             const { asFragment } = render(
                 <Banner introText="// hello world" titleText="I'm Martin Blackburn" backgroundImage="/background.png" />
+            );
+
+            expect(asFragment()).toMatchSnapshot();
+        });
+
+        test("in dark mode", () => {
+            const { asFragment } = render(
+                <Banner
+                    introText="// hello world"
+                    titleText="I'm Martin Blackburn"
+                    backgroundImage="/background.png"
+                    darken={true}
+                />
+            );
+
+            expect(asFragment()).toMatchSnapshot();
+        });
+
+        test("with child components", () => {
+            const child = <div>child component</div>;
+
+            const { asFragment } = render(
+                <Banner
+                    introText="// hello world"
+                    titleText="I'm Martin Blackburn"
+                    backgroundImage="/background.png"
+                    children={child}
+                />
             );
 
             expect(asFragment()).toMatchSnapshot();

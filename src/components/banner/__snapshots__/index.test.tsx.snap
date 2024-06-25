@@ -1,6 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner component renders correctly with profile image 1`] = `
+exports[`Banner component snapshots in dark mode 1`] = `
+<DocumentFragment>
+  <header
+    class="banner banner--darken"
+    style="background-image: url(/background.png);"
+  >
+    <div
+      class="banner__text"
+    >
+      <div
+        class="banner__intro"
+      >
+        // hello world
+      </div>
+      <h1
+        class="banner__name"
+      >
+        I'm Martin Blackburn
+      </h1>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Banner component snapshots with child components 1`] = `
+<DocumentFragment>
+  <header
+    class="banner"
+    style="background-image: url(/background.png);"
+  >
+    <div
+      class="banner__text"
+    >
+      <div
+        class="banner__intro"
+      >
+        // hello world
+      </div>
+      <h1
+        class="banner__name"
+      >
+        I'm Martin Blackburn
+      </h1>
+    </div>
+    <div>
+      child component
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Banner component snapshots with profile image 1`] = `
 <DocumentFragment>
   <header
     class="banner"
@@ -29,7 +80,7 @@ exports[`Banner component renders correctly with profile image 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Banner component renders correctly without profile image 1`] = `
+exports[`Banner component snapshots without profile image 1`] = `
 <DocumentFragment>
   <header
     class="banner"

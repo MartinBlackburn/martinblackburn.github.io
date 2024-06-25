@@ -6,15 +6,20 @@ exports[`TimelineItem component renders correctly with children 1`] = `
     class="timelineItem"
   >
     <h2
-      class="timelineItemTitle"
+      class="timelineItem__title"
     >
       some title
     </h2>
-    <time
-      datetime="1986-02-11"
+    <div
+      class="timelineItem__date"
     >
-      11 February 1986
-    </time>
+      <time
+        datetime="1986-02-11"
+      >
+        11 February 1986
+      </time>
+        
+    </div>
     <div>
       test
     </div>
@@ -28,15 +33,20 @@ exports[`TimelineItem component renders correctly with dark mode 1`] = `
     class="timelineItem timelineItem--dark"
   >
     <h2
-      class="timelineItemTitle"
+      class="timelineItem__title"
     >
       some title
     </h2>
-    <time
-      datetime="1986-02-11"
+    <div
+      class="timelineItem__date"
     >
-      11 February 1986
-    </time>
+      <time
+        datetime="1986-02-11"
+      >
+        11 February 1986
+      </time>
+        
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -47,15 +57,20 @@ exports[`TimelineItem component renders correctly without dark mode 1`] = `
     class="timelineItem"
   >
     <h2
-      class="timelineItemTitle"
+      class="timelineItem__title"
     >
       some title
     </h2>
-    <time
-      datetime="1986-02-11"
+    <div
+      class="timelineItem__date"
     >
-      11 February 1986
-    </time>
+      <time
+        datetime="1986-02-11"
+      >
+        11 February 1986
+      </time>
+        
+    </div>
   </div>
 </DocumentFragment>
 `;
