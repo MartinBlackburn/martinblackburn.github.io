@@ -1,5 +1,7 @@
 .nav {
     position: relative;
+
+    color: #fff;
 }
 
 .nav__icon {
@@ -32,7 +34,7 @@
     fill: #243f42;
 }
 
-.nav > ul {
+.nav__content {
     width: 250px;
     height: 100vh;
     padding: 20px;
@@ -47,16 +49,23 @@
     transition: all 0.2s ease;
 }
 
-.nav--visible > ul {
+.nav--visible .nav__content {
     left: 0;
+}
+
+.nav__title {
+    margin-top: 25px;
+
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .nav li {
     display: block;
 }
 
-.nav .nav__button,
-.nav .nav__title {
+.nav__button {
     width: 100%;
     border: 0;
     padding: 10px;
@@ -74,16 +83,8 @@
     transition: background 0.2s ease;
 }
 
-.nav .nav__button:hover {
+.nav__button:hover {
     color: #fff;
 
     background: rgba(255, 255, 255, 0.1);
-}
-
-.nav .nav__title {
-    cursor: default;
-}
-
-.nav ul ul {
-    margin-left: 15px;
 }

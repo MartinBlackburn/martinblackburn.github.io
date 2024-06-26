@@ -2,10 +2,10 @@
 import React from "react";
 
 // components
-import Timeline from "../";
-import TimelineItem from "../timelineItem";
+import Timeline from "../../components/timeline";
+import TimelineItem from "../../components/timeline/timelineItem";
 
-const Education = () => {
+const EducationPage = () => {
     return (
         <Timeline title="Education" dark={true}>
             <TimelineItem title="Masters degree - Games design and programming" startDate="2009/09/01" dark={true}>
@@ -50,4 +50,4 @@ const Education = () => {
     );
 };
 
-export default React.memo(Education);
+export default React.memo(EducationPage);

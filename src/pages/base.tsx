@@ -10,7 +10,7 @@ import Typewriter from "../components/typewriter";
 import { NavItem, NavItems } from "../constants/navItems";
 
 const BasePage = () => {
-    const [selectedNav, setSelectedNav] = React.useState<NavItem>(NavItems[0]);
+    const [selectedNav, setSelectedNav] = React.useState<NavItem>(NavItems.HOME);
 
     const PageComponent = React.lazy(() => import(`${selectedNav.componentPath}`));
 

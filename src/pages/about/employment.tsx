@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import Timeline from "../";
-import TimelineItem from "../timelineItem";
+import Timeline from "../../components/timeline";
+import TimelineItem from "../../components/timeline/timelineItem";
 
 const EmploymentHistory = () => {
     return (

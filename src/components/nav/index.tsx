@@ -37,33 +37,41 @@ const Nav = (props: IProps) => {
                 </svg>
             </div>
 
-            <ul className="nav__links">
-                {NavItems.map((navItem) => (
-                    <li key={navItem.name}>
-                        {!navItem.subNav && (
-                            <button className="nav__button" onClick={() => handleOnClick(navItem)}>
-                                {navItem.name}
-                            </button>
-                        )}
+            <div className="nav__content">
+                <button className="nav__button" onClick={() => handleOnClick(NavItems.HOME)}>
+                    {NavItems.HOME.name}
+                </button>
 
-                        {navItem.subNav && (
-                            <React.Fragment>
-                                <div className="nav__title">{navItem.name}</div>
+                <div className="nav__title">About</div>
 
-                                <ul>
-                                    {navItem.subNav.map((subNavItem) => (
-                                        <li key={subNavItem.name}>
-                                            <button className="nav__button" onClick={() => handleOnClick(subNavItem)}>
-                                                {subNavItem.name}
-                                            </button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </React.Fragment>
-                        )}
+                <ul className="nav__links">
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.EMPLOYMENT)}>
+                            {NavItems.EMPLOYMENT.name}
+                        </button>
                     </li>
-                ))}
-            </ul>
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.EDUCATION)}>
+                            {NavItems.EDUCATION.name}
+                        </button>
+                    </li>
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.HOBBIES)}>
+                            {NavItems.HOBBIES.name}
+                        </button>
+                    </li>
+                </ul>
+
+                <div className="nav__title">Projects</div>
+
+                <ul className="nav__links">
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.SHUFFLEBOARD)}>
+                            {NavItems.SHUFFLEBOARD.name}
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 };
