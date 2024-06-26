@@ -22,7 +22,7 @@ const ContentBlock = (props: IComponentProps) => {
         <div className={classes}>
             <h2 className="contentBlock__title">{props.title}</h2>
             <div className="contentBlock__image">
-                <img src={`${props.imagePath}`} alt={`${props.title}`} />
+                <img className="enlarge" src={`${props.imagePath}`} alt={`${props.title}`} />
             </div>
             <div className="contentBlock__content">{props.children}</div>
         </div>

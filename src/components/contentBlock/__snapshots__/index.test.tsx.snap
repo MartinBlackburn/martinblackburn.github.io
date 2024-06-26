@@ -15,6 +15,7 @@ exports[`ContentBlock component renders correctly with image left 1`] = `
     >
       <img
         alt="Climbing"
+        class="enlarge"
         src="climbing.png"
       />
     </div>
@@ -44,6 +45,7 @@ exports[`ContentBlock component renders correctly with image right 1`] = `
     >
       <img
         alt="Climbing"
+        class="enlarge"
         src="climbing.png"
       />
     </div>
