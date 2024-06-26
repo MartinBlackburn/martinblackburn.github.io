@@ -16,7 +16,7 @@ const ImageModal = (props: IComponentProps) => {
         window.addEventListener("click", (event) => {
             const target = event.target as HTMLImageElement;
 
-            if (target.nodeName === "IMG" && target.src) {
+            if (target.nodeName === "IMG" && target.src && !target.classList.contains("banner__profile")) {
                 setImage(target.src);
             }
         });

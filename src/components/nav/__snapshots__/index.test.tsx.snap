@@ -70,6 +70,13 @@ exports[`Nav component renders correctly 1`] = `
             Shuffleboard table
           </button>
         </li>
+        <li>
+          <button
+            class="nav__button"
+          >
+            Tiki Bar
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
