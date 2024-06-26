@@ -2,21 +2,62 @@
 
 exports[`Nav component renders correctly 1`] = `
 <DocumentFragment>
-  <div
+  <nav
     class="nav"
   >
-    <ul>
+    <div
+      class="nav__icon"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="nav__links"
+    >
       <li>
-        <a>
+        <button
+          class="nav__button"
+        >
           Home
-        </a>
+        </button>
       </li>
       <li>
-        <a>
+        <button
+          class="nav__button"
+        >
           Résumé
-        </a>
+        </button>
+      </li>
+      <li>
+        <div
+          class="nav__title"
+        >
+          Projects
+        </div>
+        <ul>
+          <li>
+            <button
+              class="nav__button"
+            >
+              Kitchen Renovation
+            </button>
+          </li>
+          <li>
+            <button
+              class="nav__button"
+            >
+              Shuffleboard
+            </button>
+          </li>
+        </ul>
       </li>
     </ul>
-  </div>
+  </nav>
 </DocumentFragment>
 `;

@@ -21,20 +21,20 @@ export const NavItems: NavItem[] = [
         componentPath: "./resume",
         type: NavItemType.page,
     },
-    // {
-    //     name: "Projects",
-    //     type: NavItemType.subNav,
-    //     subNav: [
-    //         {
-    //             name: "Kitchen Renovation",
-    //             componentPath: "/projects/kitchen-renovation",
-    //             type: NavItemType.page,
-    //         },
-    //         {
-    //             name: "Shuffleboard",
-    //             componentPath: "/projects/shuffleboard",
-    //             type: NavItemType.page,
-    //         },
-    //     ],
-    // },
+    {
+        name: "Projects",
+        type: NavItemType.subNav,
+        subNav: [
+            {
+                name: "Kitchen Renovation",
+                componentPath: "/projects/kitchen-renovation",
+                type: NavItemType.page,
+            },
+            {
+                name: "Shuffleboard",
+                componentPath: "/projects/shuffleboard",
+                type: NavItemType.page,
+            },
+        ],
+    },
 ];

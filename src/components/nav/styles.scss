@@ -1,34 +1,89 @@
 .nav {
-    width: 100%;
+    position: relative;
+}
+
+.nav__icon {
+    padding: 10px;
+    border-radius: 100px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    line-height: 0;
+
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.nav--visible .nav__icon {
+    left: 260px;
+}
+
+.nav__icon svg {
+    width: 30px;
+}
+
+.nav__icon path {
+    fill: #243f42;
+}
+
+.nav > ul {
+    width: 250px;
+    height: 100vh;
     padding: 20px;
 
     background: rgb(41, 134, 171);
+
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 10;
+
+    transition: all 0.2s ease;
 }
 
-.nav ul {
-    list-style: none;
-    text-align: center;
+.nav--visible > ul {
+    left: 0;
 }
 
 .nav li {
-    margin-left: 30px;
-    display: inline-block;
+    display: block;
 }
 
-.nav li:first-child {
-    margin-left: 0;
-}
+.nav .nav__button,
+.nav .nav__title {
+    width: 100%;
+    border: 0;
+    padding: 10px;
 
-.nav a {
+    text-align: left;
     color: #fff;
-    text-decoration: none;
+    font-size: 1em;
+    line-height: 1;
     font-weight: bold;
 
+    background: none;
+
     cursor: pointer;
+
+    transition: background 0.2s ease;
 }
 
-.nav a:hover,
-.nav a:active {
+.nav .nav__button:hover {
     color: #fff;
-    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav .nav__title {
+    cursor: default;
+}
+
+.nav ul ul {
+    margin-left: 15px;
 }
