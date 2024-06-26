@@ -24,4 +24,8 @@ export const NavItems: { [key: string]: NavItem } = {
         name: "Shuffleboard table",
         componentPath: "./projects/shuffleboard",
     },
+    TIKIBAR: {
+        name: "Tiki Bar",
+        componentPath: "./projects/tikiBar",
+    },
 };

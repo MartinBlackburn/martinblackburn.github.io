@@ -70,6 +70,11 @@ const Nav = (props: IProps) => {
                             {NavItems.SHUFFLEBOARD.name}
                         </button>
                     </li>
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.TIKIBAR)}>
+                            {NavItems.TIKIBAR.name}
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
