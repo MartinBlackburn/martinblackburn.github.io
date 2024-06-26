@@ -53,7 +53,7 @@ const Nav = (props: IProps) => {
                                 <ul>
                                     {navItem.subNav.map((subNavItem) => (
                                         <li key={subNavItem.name}>
-                                            <button className="nav__button" onClick={() => props.onClick(subNavItem)}>
+                                            <button className="nav__button" onClick={() => handleOnClick(subNavItem)}>
                                                 {subNavItem.name}
                                             </button>
                                         </li>

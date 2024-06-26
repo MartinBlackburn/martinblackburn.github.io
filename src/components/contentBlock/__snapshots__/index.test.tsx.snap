@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentBlock component renders correctly with image left 1`] = `
+<DocumentFragment>
+  <div
+    class="contentBlock"
+  >
+    <div
+      class="contentBlock__image"
+    >
+      <img
+        alt="Climbing"
+        src="climbing.png"
+      />
+    </div>
+    <div
+      class="contentBlock__content"
+    >
+      <h2
+        class="contentBlock__title"
+      >
+        Climbing
+      </h2>
+      <p>
+        some text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ContentBlock component renders correctly with image right 1`] = `
+<DocumentFragment>
+  <div
+    class="contentBlock contentBlock--imageRight"
+  >
+    <div
+      class="contentBlock__image"
+    >
+      <img
+        alt="Climbing"
+        src="climbing.png"
+      />
+    </div>
+    <div
+      class="contentBlock__content"
+    >
+      <h2
+        class="contentBlock__title"
+      >
+        Climbing
+      </h2>
+      <p>
+        some text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -5,7 +5,7 @@ import { render } from "@testing-library/react";
 import Hobbies from "./";
 
 // mocks
-jest.mock("./hobby", () => () => <div>hobby</div>);
+jest.mock("../contentBlock", () => () => <div>hobby</div>);
 
 describe("Hobbies component", () => {
     test("renders correctly", () => {

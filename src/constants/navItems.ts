@@ -32,7 +32,7 @@ export const NavItems: NavItem[] = [
             },
             {
                 name: "Shuffleboard",
-                componentPath: "/projects/shuffleboard",
+                componentPath: "./projects/shuffleboard",
                 type: NavItemType.page,
             },
         ],
