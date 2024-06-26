@@ -58,3 +58,19 @@ iframe {
     min-height: 50vh;
     overflow-y: hidden;
 }
+
+.repeatingContent {
+    padding: 50px 20px;
+}
+
+.repeatingContent h1 {
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.repeatingContent__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

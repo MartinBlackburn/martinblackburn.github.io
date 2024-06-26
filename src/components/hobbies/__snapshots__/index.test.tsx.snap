@@ -3,13 +3,13 @@
 exports[`Hobbies component renders correctly 1`] = `
 <DocumentFragment>
   <section
-    class="hobbies"
+    class="repeatingContent"
   >
     <h1>
       Things I do for fun:
     </h1>
     <div
-      class="hobbies__list"
+      class="repeatingContent__list"
     >
       <div>
         hobby

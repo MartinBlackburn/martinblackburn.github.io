@@ -25,11 +25,11 @@ export const NavItems: NavItem[] = [
         name: "Projects",
         type: NavItemType.subNav,
         subNav: [
-            {
-                name: "Kitchen Renovation",
-                componentPath: "/projects/kitchen-renovation",
-                type: NavItemType.page,
-            },
+            // {
+            //     name: "Kitchen Renovation",
+            //     componentPath: "/projects/kitchen-renovation",
+            //     type: NavItemType.page,
+            // },
             {
                 name: "Shuffleboard",
                 componentPath: "./projects/shuffleboard",

@@ -20,14 +20,11 @@ const ContentBlock = (props: IComponentProps) => {
 
     return (
         <div className={classes}>
+            <h2 className="contentBlock__title">{props.title}</h2>
             <div className="contentBlock__image">
                 <img src={`${props.imagePath}`} alt={`${props.title}`} />
             </div>
-            <div className="contentBlock__content">
-                <h2 className="contentBlock__title">{props.title}</h2>
-
-                {props.children}
-            </div>
+            <div className="contentBlock__content">{props.children}</div>
         </div>
     );
 };

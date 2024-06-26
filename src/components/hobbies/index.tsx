@@ -6,15 +6,12 @@ import { distance, goodDeeds } from "../../constants/goodgym";
 // components
 import Hobby from "../contentBlock";
 
-// styles
-import "./styles.scss";
-
 const Hobbies = () => {
     return (
-        <section className="hobbies">
+        <section className="repeatingContent">
             <h1>Things I do for fun:</h1>
 
-            <div className="hobbies__list">
+            <div className="repeatingContent__list">
                 <Hobby title="Running" imagePath="/images/hobbies/running.png" imageRight={true}>
                     <React.Fragment>
                         <p>

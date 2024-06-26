@@ -45,13 +45,6 @@ exports[`Nav component renders correctly 1`] = `
             <button
               class="nav__button"
             >
-              Kitchen Renovation
-            </button>
-          </li>
-          <li>
-            <button
-              class="nav__button"
-            >
               Shuffleboard
             </button>
           </li>
