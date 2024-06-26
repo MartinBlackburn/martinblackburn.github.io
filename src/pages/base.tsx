@@ -8,6 +8,7 @@ import Typewriter from "../components/typewriter";
 
 // constants
 import { NavItem, NavItems } from "../constants/navItems";
+import ImageModal from "../components/imageModal";
 
 const BasePage = () => {
     const [selectedNav, setSelectedNav] = React.useState<NavItem>(NavItems.HOME);
@@ -23,6 +24,8 @@ const BasePage = () => {
                 profileImage={`${process.env.PUBLIC_URL}/images/profile2.jpg`}
                 children={<Typewriter />}
             />
+
+            <ImageModal />
 
             <Nav onClick={setSelectedNav} />
 
