@@ -6,7 +6,7 @@ import ContentBlock from "../../components/contentBlock";
 const ShuffleBoardPage = () => {
     return (
         <section className="repeatingContent">
-            <h1>How I built a shuffle board:</h1>
+            <h1>How I built a shuffle board table:</h1>
 
             <div className="repeatingContent__list">
                 <ContentBlock title="The frame" imagePath="/images/projects/shuffleboard/frame.jpg" imageRight={true}>

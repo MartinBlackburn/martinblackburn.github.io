@@ -21,7 +21,7 @@ export const NavItems: { [key: string]: NavItem } = {
         componentPath: "./about/hobbies",
     },
     SHUFFLEBOARD: {
-        name: "ShuffleBoard",
+        name: "Shuffleboard table",
         componentPath: "./projects/shuffleboard",
     },
 };

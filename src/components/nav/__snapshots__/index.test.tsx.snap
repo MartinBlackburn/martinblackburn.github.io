@@ -67,7 +67,7 @@ exports[`Nav component renders correctly 1`] = `
           <button
             class="nav__button"
           >
-            ShuffleBoard
+            Shuffleboard table
           </button>
         </li>
       </ul>
