@@ -1,6 +1,9 @@
 //libraries
 import React from "react";
 
+// constants
+import { ImagePosition } from "../../constants/imagePosition";
+
 // components
 import ContentBlock from "../../components/contentBlock";
 
@@ -10,7 +13,12 @@ const TikiBarPage = () => {
             <h1>Tiki bar build:</h1>
 
             <div className="repeatingContent__list">
-                <ContentBlock title="Before" imagePath="/images/projects/tikibar/before.jpg" imageRight={true}>
+                <ContentBlock
+                    title="Before"
+                    imagePath="/images/projects/tikibar/before.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             We've had this unused messy area at the back of the garage for a while. As we have a party
@@ -19,13 +27,23 @@ const TikiBarPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="The frame" imagePath="/images/projects/tikibar/frame.jpg" imageRight={false}>
+                <ContentBlock
+                    title="The frame"
+                    imagePath="/images/projects/tikibar/frame.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>Knocking together a quick frame.</p>
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="Roof close up" imagePath="/images/projects/tikibar/roof.jpg" imageRight={true}>
+                <ContentBlock
+                    title="Roof close up"
+                    imagePath="/images/projects/tikibar/roof.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             Close up of the roof, I got lucky here, as the angle needed was the exact size my mitre saw
@@ -37,7 +55,8 @@ const TikiBarPage = () => {
                 <ContentBlock
                     title="Adding the table top"
                     imagePath="/images/projects/tikibar/top.jpg"
-                    imageRight={false}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>
@@ -51,7 +70,8 @@ const TikiBarPage = () => {
                 <ContentBlock
                     title="Lights and recipes"
                     imagePath="/images/projects/tikibar/recipes 2.jpg"
-                    imageRight={true}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>
@@ -61,7 +81,12 @@ const TikiBarPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="Finished" imagePath="/images/projects/tikibar/finished.jpg" imageRight={false}>
+                <ContentBlock
+                    title="Finished"
+                    imagePath="/images/projects/tikibar/finished.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             All done! Not bad for a few days work. Hopefully it''l go down well at the party. If not,

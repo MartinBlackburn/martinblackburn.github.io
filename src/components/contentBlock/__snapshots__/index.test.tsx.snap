@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContentBlock component renders correctly with image left 1`] = `
+exports[`ContentBlock component renders correctly with image full 1`] = `
 <DocumentFragment>
   <div
-    class="contentBlock"
+    class="contentBlock contentBlock--imageFull"
   >
     <h2
       class="contentBlock__title"
@@ -11,7 +11,37 @@ exports[`ContentBlock component renders correctly with image left 1`] = `
       Climbing
     </h2>
     <div
-      class="contentBlock__image"
+      class="contentBlock__image "
+    >
+      <img
+        alt="Climbing"
+        class="enlarge"
+        src="climbing.png"
+      />
+    </div>
+    <div
+      class="contentBlock__content"
+    >
+      <p>
+        some text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ContentBlock component renders correctly with image left 1`] = `
+<DocumentFragment>
+  <div
+    class="contentBlock contentBlock--imageLeft"
+  >
+    <h2
+      class="contentBlock__title"
+    >
+      Climbing
+    </h2>
+    <div
+      class="contentBlock__image "
     >
       <img
         alt="Climbing"
@@ -41,7 +71,7 @@ exports[`ContentBlock component renders correctly with image right 1`] = `
       Climbing
     </h2>
     <div
-      class="contentBlock__image"
+      class="contentBlock__image "
     >
       <img
         alt="Climbing"

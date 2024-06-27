@@ -3,6 +3,7 @@ import { render } from "@testing-library/react";
 
 // component under test
 import ContentBlock from ".";
+import { ImagePosition } from "../../constants/imagePosition";
 
 describe("ContentBlock component", () => {
     test("renders correctly with image left", () => {
@@ -11,7 +12,7 @@ describe("ContentBlock component", () => {
         };
 
         const { asFragment } = render(
-            <ContentBlock title="Climbing" imagePath="climbing.png" imageRight={false}>
+            <ContentBlock title="Climbing" imagePath="climbing.png" imagePosition={ImagePosition.LEFT}>
                 <TextComponent />
             </ContentBlock>
         );
@@ -25,7 +26,21 @@ describe("ContentBlock component", () => {
         };
 
         const { asFragment } = render(
-            <ContentBlock title="Climbing" imagePath="climbing.png" imageRight={true}>
+            <ContentBlock title="Climbing" imagePath="climbing.png" imagePosition={ImagePosition.RIGHT}>
+                <TextComponent />
+            </ContentBlock>
+        );
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    test("renders correctly with image full", () => {
+        const TextComponent = () => {
+            return <p>some text</p>;
+        };
+
+        const { asFragment } = render(
+            <ContentBlock title="Climbing" imagePath="climbing.png" imagePosition={ImagePosition.FULL}>
                 <TextComponent />
             </ContentBlock>
         );

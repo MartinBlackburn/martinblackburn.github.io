@@ -2,6 +2,7 @@ import React from "react";
 
 // constants
 import { distance, goodDeeds } from "../../constants/goodgym";
+import { ImagePosition } from "../../constants/imagePosition";
 
 // components
 import Hobby from "../../components/contentBlock";
@@ -12,7 +13,7 @@ const HobbiesPage = () => {
             <h1>Things I do for fun:</h1>
 
             <div className="repeatingContent__list">
-                <Hobby title="Running" imagePath="/images/hobbies/running.png" imageRight={true}>
+                <Hobby title="Running" imagePath="/images/hobbies/running.png" imagePosition={ImagePosition.RIGHT}>
                     <React.Fragment>
                         <p>
                             I am a member of the <a href="https://www.goodgym.org">Good Gym</a>. Who are a group of
@@ -26,7 +27,7 @@ const HobbiesPage = () => {
                     </React.Fragment>
                 </Hobby>
 
-                <Hobby title="Climbing" imagePath="/images/hobbies/climbing.png" imageRight={false}>
+                <Hobby title="Climbing" imagePath="/images/hobbies/climbing.png" imagePosition={ImagePosition.LEFT}>
                     <React.Fragment>
                         <p>
                             I'm all for finding ways to keep fit which don't feel like being repetitive and boring.
@@ -41,7 +42,7 @@ const HobbiesPage = () => {
                     </React.Fragment>
                 </Hobby>
 
-                <Hobby title="Gaming" imagePath="/images/hobbies/gaming.png" imageRight={true}>
+                <Hobby title="Gaming" imagePath="/images/hobbies/gaming.png" imagePosition={ImagePosition.RIGHT}>
                     <React.Fragment>
                         <p>
                             Competition, puzzles, and the ability to transport yourself to an entirely new world and/or
@@ -55,7 +56,7 @@ const HobbiesPage = () => {
                     </React.Fragment>
                 </Hobby>
 
-                <Hobby title="Cooking" imagePath="/images/hobbies/cooking.png" imageRight={false}>
+                <Hobby title="Cooking" imagePath="/images/hobbies/cooking.png" imagePosition={ImagePosition.LEFT}>
                     <React.Fragment>
                         <p>
                             During lockdown I found myself with a lot more spare time, so I started cooking more. I

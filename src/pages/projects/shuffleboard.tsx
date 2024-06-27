@@ -1,6 +1,9 @@
 //libraries
 import React from "react";
 
+// constants
+import { ImagePosition } from "../../constants/imagePosition";
+
 // components
 import ContentBlock from "../../components/contentBlock";
 
@@ -10,7 +13,12 @@ const ShuffleBoardPage = () => {
             <h1>How I built a shuffle board table:</h1>
 
             <div className="repeatingContent__list">
-                <ContentBlock title="The frame" imagePath="/images/projects/shuffleboard/frame.jpg" imageRight={true}>
+                <ContentBlock
+                    title="The frame"
+                    imagePath="/images/projects/shuffleboard/frame.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             The vertical part of the legs are wooden fence posts (70mm x 70mm x 700mm). The horizontal
@@ -27,7 +35,12 @@ const ShuffleBoardPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="The box" imagePath="/images/projects/shuffleboard/box 2.jpg" imageRight={false}>
+                <ContentBlock
+                    title="The box"
+                    imagePath="/images/projects/shuffleboard/box 2.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             The bottom of the box is two OSB boards (1000mm x 1900mm x 18mm) laid next to each other,
@@ -43,7 +56,8 @@ const ShuffleBoardPage = () => {
                 <ContentBlock
                     title="Prime and tape"
                     imagePath="/images/projects/shuffleboard/primed.jpg"
-                    imageRight={true}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>
@@ -57,7 +71,12 @@ const ShuffleBoardPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="Paint" imagePath="/images/projects/shuffleboard/paint.jpg" imageRight={false}>
+                <ContentBlock
+                    title="Paint"
+                    imagePath="/images/projects/shuffleboard/paint.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             Quick coat of paint to to make it look a little nicer. Again, using a roller was quicker
@@ -69,7 +88,8 @@ const ShuffleBoardPage = () => {
                 <ContentBlock
                     title="Climate adjusters"
                     imagePath="/images/projects/shuffleboard/climate adjusters.jpg"
-                    imageRight={true}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>
@@ -85,7 +105,12 @@ const ShuffleBoardPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="Matting" imagePath="/images/projects/shuffleboard/matting.jpg" imageRight={false}>
+                <ContentBlock
+                    title="Matting"
+                    imagePath="/images/projects/shuffleboard/matting.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             Adding some exercise matting to help protect the frame from those people who like to try to
@@ -98,7 +123,12 @@ const ShuffleBoardPage = () => {
                     </React.Fragment>
                 </ContentBlock>
 
-                <ContentBlock title="Numbering" imagePath="/images/projects/shuffleboard/numbers.jpg" imageRight={true}>
+                <ContentBlock
+                    title="Numbering"
+                    imagePath="/images/projects/shuffleboard/numbers.jpg"
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
+                >
                     <React.Fragment>
                         <p>
                             Adding some sticky vinyl numbers to the scoring area. This was easier than trying to
@@ -110,7 +140,8 @@ const ShuffleBoardPage = () => {
                 <ContentBlock
                     title="Naming things is hard"
                     imagePath="/images/projects/shuffleboard/name 2.jpg"
-                    imageRight={false}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>A few more vinyl stickers and it now has a name, curtsy of my wife.</p>
@@ -120,7 +151,8 @@ const ShuffleBoardPage = () => {
                 <ContentBlock
                     title="Finished"
                     imagePath="/images/projects/shuffleboard/finished 2.jpg"
-                    imageRight={true}
+                    imagePosition={ImagePosition.FULL}
+                    imageBorder={true}
                 >
                     <React.Fragment>
                         <p>
