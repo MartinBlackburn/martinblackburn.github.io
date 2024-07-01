@@ -8,15 +8,15 @@ import TimelineItem from "../../components/timeline/timelineItem";
 const EmploymentHistory = () => {
     return (
         <Timeline title="Employment History">
-            <TimelineItem title="Engineering manager - Flutter UK&I" startDate="2022/10/01" endDate="present">
+            <TimelineItem title="Engineering manager - Flutter UK&I" startDate="2020/08/17" endDate="present">
                 <p>
                     Having been in the team since it's inception, when it was just two developers. I had a lot of
                     knowledge of what we were building and had helped several other engineers get up-to-speed.
                 </p>
                 <p>
-                    At this point the team had grown from two people to be around 11 in size, 7 developers, 2 testers, a
-                    business analyst, and a product owner. Plus external stakeholders in other teams who would consume
-                    what we were building.
+                    At this point the team had grown from two people to be around 12 in size, 7 developers, 2 testers, a
+                    business analyst, a product owner and a agile delivery lead. Plus external stakeholders in other
+                    teams who would consume what we were building.
                 </p>
                 <p>
                     Our scope of work had also grown, not only were we responsible for launching all the content across
@@ -45,7 +45,7 @@ const EmploymentHistory = () => {
             <TimelineItem
                 title="Senior Software Engineer - Sky Betting & Gaming"
                 startDate="2019/05/01"
-                endDate="2022/10/01"
+                endDate="2020/08/17"
             >
                 <p>
                     As part of the promotion I was the start of a new team, one of two developers, to help create a
