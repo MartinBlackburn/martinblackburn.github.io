@@ -23,10 +23,6 @@ const Nav = (props: IProps) => {
     const handleOnClick = (navItem: NavItem) => {
         setVisible(false);
         props.onClick(navItem);
-        setTimeout(() => {
-            console.log("scrolling", window.innerHeight);
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-        }, 200);
     };
 
     return (
@@ -73,6 +69,11 @@ const Nav = (props: IProps) => {
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.TIKIBAR)}>
                             {NavItems.TIKIBAR.name}
+                        </button>
+                    </li>
+                    <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.OFFICE)}>
+                            {NavItems.OFFICE.name}
                         </button>
                     </li>
                 </ul>

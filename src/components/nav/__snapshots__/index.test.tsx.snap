@@ -77,6 +77,13 @@ exports[`Nav component renders correctly 1`] = `
             Tiki Bar
           </button>
         </li>
+        <li>
+          <button
+            class="nav__button"
+          >
+            Office renovation
+          </button>
+        </li>
       </ul>
     </div>
   </nav>

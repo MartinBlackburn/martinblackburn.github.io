@@ -28,4 +28,8 @@ export const NavItems: { [key: string]: NavItem } = {
         name: "Tiki Bar",
         componentPath: "./projects/tikiBar",
     },
+    OFFICE: {
+        name: "Office renovation",
+        componentPath: "./projects/office",
+    },
 };

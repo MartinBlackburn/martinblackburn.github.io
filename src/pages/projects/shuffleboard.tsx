@@ -7,9 +7,14 @@ import { ImagePosition } from "../../constants/imagePosition";
 // components
 import ContentBlock from "../../components/contentBlock";
 
+// hooks
+import { useScrollTo } from "../../utils/scrollToHook";
+
 const ShuffleBoardPage = () => {
+    const componentRef = useScrollTo();
+
     return (
-        <section className="repeatingContent">
+        <section className="repeatingContent" ref={componentRef}>
             <h1>How I built a shuffle board table:</h1>
 
             <div className="repeatingContent__list">

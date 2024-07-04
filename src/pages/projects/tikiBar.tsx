@@ -7,9 +7,14 @@ import { ImagePosition } from "../../constants/imagePosition";
 // components
 import ContentBlock from "../../components/contentBlock";
 
+// hooks
+import { useScrollTo } from "../../utils/scrollToHook";
+
 const TikiBarPage = () => {
+    const componentRef = useScrollTo();
+
     return (
-        <section className="repeatingContent">
+        <section className="repeatingContent" ref={componentRef}>
             <h1>Tiki bar build:</h1>
 
             <div className="repeatingContent__list">
