@@ -5,9 +5,14 @@ import React from "react";
 import Timeline from "../../components/timeline";
 import TimelineItem from "../../components/timeline/timelineItem";
 
+// hooks
+import { useScrollTo } from "../../utils/scrollToHook";
+
 const EducationPage = () => {
+    const componentRef = useScrollTo();
+
     return (
-        <Timeline title="Education" dark={true}>
+        <Timeline title="Education" dark={true} reference={componentRef}>
             <TimelineItem title="Masters degree - Games design and programming" startDate="2009/09/01" dark={true}>
                 <p>
                     I created a interface for computers, using a glove with infrared lights, I was able to track hand

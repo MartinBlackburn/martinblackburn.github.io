@@ -7,9 +7,14 @@ import { ImagePosition } from "../../constants/imagePosition";
 // components
 import Hobby from "../../components/contentBlock";
 
+// hooks
+import { useScrollTo } from "../../utils/scrollToHook";
+
 const HobbiesPage = () => {
+    const componentRef = useScrollTo();
+
     return (
-        <section className="repeatingContent">
+        <section className="repeatingContent" ref={componentRef}>
             <h1>Things I do for fun:</h1>
 
             <div className="repeatingContent__list">

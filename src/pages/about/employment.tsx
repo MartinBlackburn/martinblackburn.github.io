@@ -5,9 +5,14 @@ import React from "react";
 import Timeline from "../../components/timeline";
 import TimelineItem from "../../components/timeline/timelineItem";
 
+// hooks
+import { useScrollTo } from "../../utils/scrollToHook";
+
 const EmploymentHistory = () => {
+    const componentRef = useScrollTo();
+
     return (
-        <Timeline title="Employment History">
+        <Timeline title="Employment History" reference={componentRef}>
             <TimelineItem title="Engineering manager - Flutter UK&I" startDate="2020/08/17" endDate="present">
                 <p>
                     Having been in the team since it's inception, when it was just two developers. I had a lot of

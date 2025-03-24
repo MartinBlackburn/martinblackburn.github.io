@@ -9,6 +9,7 @@ interface IComponentProps {
     title: string;
     dark?: boolean;
     children?: React.ReactNode;
+    reference?: any;
 }
 
 const Timeline = (props: IComponentProps) => {
@@ -19,7 +20,7 @@ const Timeline = (props: IComponentProps) => {
     }
 
     return (
-        <div className={classes}>
+        <div className={classes} ref={props.reference}>
             <h1 className="timeline__title">{props.title}</h1>
 
             <div className="timeline__content">{props.children}</div>
