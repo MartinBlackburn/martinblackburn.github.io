@@ -2,13 +2,13 @@
 import React from "react";
 
 // constants
-import { NavItems, NavItem } from "../../constants/navItems";
+import { NavItems } from "../../constants/navItems";
 
 // styles
 import "./styles.scss";
 
 interface IProps {
-    onClick: (navItem: NavItem) => void;
+    onClick: (navItem: string) => void;
 }
 
 const Nav = (props: IProps) => {
@@ -20,7 +20,7 @@ const Nav = (props: IProps) => {
         classes += " nav--visible";
     }
 
-    const handleOnClick = (navItem: NavItem) => {
+    const handleOnClick = (navItem: string) => {
         setVisible(false);
         props.onClick(navItem);
     };
@@ -35,7 +35,7 @@ const Nav = (props: IProps) => {
 
             <div className="nav__content">
                 <button className="nav__button" onClick={() => handleOnClick(NavItems.HOME)}>
-                    {NavItems.HOME.name}
+                    {NavItems.HOME}
                 </button>
 
                 <div className="nav__title">About</div>
@@ -43,17 +43,17 @@ const Nav = (props: IProps) => {
                 <ul className="nav__links">
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.EMPLOYMENT)}>
-                            {NavItems.EMPLOYMENT.name}
+                            {NavItems.EMPLOYMENT}
                         </button>
                     </li>
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.EDUCATION)}>
-                            {NavItems.EDUCATION.name}
+                            {NavItems.EDUCATION}
                         </button>
                     </li>
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.HOBBIES)}>
-                            {NavItems.HOBBIES.name}
+                            {NavItems.HOBBIES}
                         </button>
                     </li>
                 </ul>
@@ -62,18 +62,23 @@ const Nav = (props: IProps) => {
 
                 <ul className="nav__links">
                     <li>
+                        <button className="nav__button" onClick={() => handleOnClick(NavItems.CREATUREDASH)}>
+                            {NavItems.CREATUREDASH}
+                        </button>
+                    </li>
+                    <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.SHUFFLEBOARD)}>
-                            {NavItems.SHUFFLEBOARD.name}
+                            {NavItems.SHUFFLEBOARD}
                         </button>
                     </li>
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.TIKIBAR)}>
-                            {NavItems.TIKIBAR.name}
+                            {NavItems.TIKIBAR}
                         </button>
                     </li>
                     <li>
                         <button className="nav__button" onClick={() => handleOnClick(NavItems.OFFICE)}>
-                            {NavItems.OFFICE.name}
+                            {NavItems.OFFICE}
                         </button>
                     </li>
                 </ul>

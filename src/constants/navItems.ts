@@ -1,35 +1,10 @@
-export interface NavItem {
-    name: string;
-    componentPath: string;
-}
-
-export const NavItems: { [key: string]: NavItem } = {
-    HOME: {
-        name: "Home",
-        componentPath: "./home",
-    },
-    EMPLOYMENT: {
-        name: "Employment history",
-        componentPath: "./about/employment",
-    },
-    EDUCATION: {
-        name: "Education",
-        componentPath: "./about/education",
-    },
-    HOBBIES: {
-        name: "Hobbies",
-        componentPath: "./about/hobbies",
-    },
-    SHUFFLEBOARD: {
-        name: "Shuffleboard table",
-        componentPath: "./projects/shuffleboard",
-    },
-    TIKIBAR: {
-        name: "Tiki Bar",
-        componentPath: "./projects/tikiBar",
-    },
-    OFFICE: {
-        name: "Office renovation",
-        componentPath: "./projects/office",
-    },
+export const NavItems = {
+    HOME: "Home",
+    EMPLOYMENT: "Employment history",
+    EDUCATION: "Education",
+    HOBBIES: "Hobbies",
+    CREATUREDASH: "Creature dash",
+    SHUFFLEBOARD: "Shuffleboard table",
+    TIKIBAR: "Tiki Bar",
+    OFFICE: "Office renovation",
 };

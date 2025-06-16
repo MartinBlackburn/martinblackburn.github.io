@@ -10,7 +10,7 @@ import "./styles.scss";
 // types
 interface IComponentProps {
     title: string;
-    imagePath: string;
+    imagePath?: string;
     imagePosition: ImagePosition;
     imageBorder?: boolean;
     children: JSX.Element;
@@ -34,9 +34,11 @@ const ContentBlock = (props: IComponentProps) => {
     return (
         <div className={classes}>
             <h2 className="contentBlock__title">{props.title}</h2>
-            <div className={`contentBlock__image ${props.imageBorder ? "contentBlock__image--border" : ""}`}>
-                <img className="enlarge" src={`${props.imagePath}`} alt={`${props.title}`} />
-            </div>
+            {props.imagePath && (
+                <div className={`contentBlock__image ${props.imageBorder ? "contentBlock__image--border" : ""}`}>
+                    <img className="enlarge" src={`${props.imagePath}`} alt={`${props.title}`} />
+                </div>
+            )}
             <div className="contentBlock__content">{props.children}</div>
         </div>
     );

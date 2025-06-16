@@ -8,7 +8,7 @@ enum Status {
     DELETE = "delete",
 }
 
-const words = ["Web developer", "Mentor", "Runner", "Maker", "Gamer"];
+const words = ["Web developer", "Manager", "Mentor", "Runner", "Maker", "Gamer"];
 
 let status: Status = Status.WRITE;
 let currentWordIndex = 0;

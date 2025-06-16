@@ -32,17 +32,17 @@ const HobbiesPage = () => {
                     </React.Fragment>
                 </Hobby>
 
-                <Hobby title="Climbing" imagePath="/images/hobbies/climbing.png" imagePosition={ImagePosition.LEFT}>
+                <Hobby title="Padel" imagePath="/images/hobbies/padel.png" imagePosition={ImagePosition.LEFT}>
                     <React.Fragment>
                         <p>
                             I'm all for finding ways to keep fit which don't feel like being repetitive and boring.
-                            Bouldering does this very well. I currently climb at about a v3 level, maybe v4 on a good
-                            day.
+                            Padel does this very well.
                         </p>
                         <p>
-                            Bouldering is a great sport and you'll be surprised how quickly you can build strength and
-                            technique to start doing some of those harder climbs that you previously thought were out of
-                            reach (pun intended).
+                            Padel is a racket sport typically played in doubles on an enclosed court. It has the same
+                            scoring system as tennis, but different rules, strokes, and technique. The balls are similar
+                            but softer. The bats are solid (without strings). The most fun part if that the balls can be
+                            played off the court walls, similar to squash.
                         </p>
                     </React.Fragment>
                 </Hobby>

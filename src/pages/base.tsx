@@ -5,23 +5,63 @@ import React from "react";
 import Banner from "../components/banner";
 import Nav from "../components/nav";
 import Typewriter from "../components/typewriter";
-
-// constants
-import { NavItem, NavItems } from "../constants/navItems";
 import ImageModal from "../components/imageModal";
 
-const BasePage = () => {
-    const [selectedNav, setSelectedNav] = React.useState<NavItem>(NavItems.HOME);
+import Home from "./home";
 
-    const PageComponent = React.lazy(() => import(`${selectedNav.componentPath}`));
+import Employment from "./about/employment";
+import Education from "./about/education";
+import Hobbies from "./about/hobbies";
+
+import CreatureDash from "./projects/creatureDash";
+import Shuffleboard from "./projects/shuffleboard";
+import TikiBar from "./projects/tikiBar";
+import Office from "./projects/office";
+
+// constants
+import { NavItems } from "../constants/navItems";
+
+const BasePage = () => {
+    const [selectedNav, setSelectedNav] = React.useState<string>(NavItems.HOME);
+
+    let PageComponent: React.ReactElement;
+
+    switch (selectedNav) {
+        case NavItems.HOME:
+            PageComponent = <Home />;
+            break;
+        case NavItems.EMPLOYMENT:
+            PageComponent = <Employment />;
+            break;
+        case NavItems.EDUCATION:
+            PageComponent = <Education />;
+            break;
+        case NavItems.HOBBIES:
+            PageComponent = <Hobbies />;
+            break;
+        case NavItems.CREATUREDASH:
+            PageComponent = <CreatureDash />;
+            break;
+        case NavItems.SHUFFLEBOARD:
+            PageComponent = <Shuffleboard />;
+            break;
+        case NavItems.TIKIBAR:
+            PageComponent = <TikiBar />;
+            break;
+        case NavItems.OFFICE:
+            PageComponent = <Office />;
+            break;
+        default:
+            PageComponent = <Home />;
+    }
 
     return (
         <React.Fragment>
             <Banner
                 introText="// hello world"
                 titleText="I'm Martin Blackburn"
-                backgroundImage={`${process.env.PUBLIC_URL}/images/background.jpg`}
-                profileImage={`${process.env.PUBLIC_URL}/images/profile2.jpg`}
+                backgroundImage={`/images/background.jpg`}
+                profileImage={`/images/profile2.jpg`}
                 children={<Typewriter />}
             />
 
@@ -29,9 +69,7 @@ const BasePage = () => {
 
             <Nav onClick={setSelectedNav} />
 
-            <React.Suspense>
-                <PageComponent />
-            </React.Suspense>
+            {PageComponent}
         </React.Fragment>
     );
 };
