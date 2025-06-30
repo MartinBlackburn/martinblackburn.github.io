@@ -1,5 +1,5 @@
 //libraries
-import React from "react";
+import React, { useEffect } from "react";
 
 // components
 import Banner from "../components/banner";
@@ -54,6 +54,18 @@ const BasePage = () => {
         default:
             PageComponent = <Home />;
     }
+
+    useEffect(() => {
+        // Set the initial selected nav item based on the query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialNav = urlParams.get("nav") || NavItems.HOME;
+
+        const navItem = Object.values(NavItems).find((item) => initialNav.includes(item));
+
+        if (navItem) {
+            setSelectedNav(navItem);
+        }
+    }, []);
 
     return (
         <React.Fragment>
